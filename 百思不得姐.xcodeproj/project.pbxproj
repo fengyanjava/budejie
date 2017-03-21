@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A2207B1E818D1300BC1B50 /* FZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */; };
 		00E42F851E7E3A52003C6F84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E42F841E7E3A52003C6F84 /* main.m */; };
 		00E42F881E7E3A52003C6F84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E42F871E7E3A52003C6F84 /* AppDelegate.m */; };
 		00E42F901E7E3A52003C6F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00A220791E818D1300BC1B50 /* FZYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBarController.h; sourceTree = "<group>"; };
+		00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBarController.m; sourceTree = "<group>"; };
 		00E42F801E7E3A52003C6F84 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E42F841E7E3A52003C6F84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00E42F861E7E3A52003C6F84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +40,8 @@
 			children = (
 				00E42F861E7E3A52003C6F84 /* AppDelegate.h */,
 				00E42F871E7E3A52003C6F84 /* AppDelegate.m */,
+				00A220791E818D1300BC1B50 /* FZYTabBarController.h */,
+				00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */,
 				00E42F841E7E3A52003C6F84 /* main.m */,
 			);
 			name = Classes;
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A2207B1E818D1300BC1B50 /* FZYTabBarController.m in Sources */,
 				00E42F881E7E3A52003C6F84 /* AppDelegate.m in Sources */,
 				00E42F851E7E3A52003C6F84 /* main.m in Sources */,
 			);
