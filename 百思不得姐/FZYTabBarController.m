@@ -43,11 +43,18 @@
     
     UIViewController *vc3 = [[UIViewController alloc]init];
     [self setupOneChildViewController:vc3 withTitle:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+
     
 }
 
 - (void) setupOneChildViewController:(UIViewController *)viewController withTitle:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage {
-    viewController.view.backgroundColor = [UIColor lightGrayColor];
+    
+//    CGFloat red = arc4random_uniform(100) / 100.0;
+//    CGFloat green = arc4random_uniform(100) / 100.0;
+//    CGFloat blue = arc4random_uniform(100) / 100.0;
+//    UIColor *bgColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
+    
+    viewController.view.backgroundColor = FZYRandomColor;
     viewController.tabBarItem.title = title;
     viewController.tabBarItem.image = [UIImage imageNamed:image];
     viewController.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
