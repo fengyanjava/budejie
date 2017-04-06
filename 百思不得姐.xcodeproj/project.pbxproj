@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0012099D1E96A55500682F02 /* FZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0012099C1E96A55500682F02 /* FZYTabBar.m */; };
 		00A2207B1E818D1300BC1B50 /* FZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */; };
 		00E42F851E7E3A52003C6F84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E42F841E7E3A52003C6F84 /* main.m */; };
 		00E42F881E7E3A52003C6F84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E42F871E7E3A52003C6F84 /* AppDelegate.m */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0012099B1E96A55500682F02 /* FZYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBar.h; sourceTree = "<group>"; };
+		0012099C1E96A55500682F02 /* FZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBar.m; sourceTree = "<group>"; };
 		008D5F881E82E20B00E9FC62 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		00A220791E818D1300BC1B50 /* FZYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBarController.h; sourceTree = "<group>"; };
 		00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBarController.m; sourceTree = "<group>"; };
@@ -45,6 +48,8 @@
 				00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */,
 				008D5F881E82E20B00E9FC62 /* PrefixHeader.pch */,
 				00E42F841E7E3A52003C6F84 /* main.m */,
+				0012099B1E96A55500682F02 /* FZYTabBar.h */,
+				0012099C1E96A55500682F02 /* FZYTabBar.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				00A2207B1E818D1300BC1B50 /* FZYTabBarController.m in Sources */,
 				00E42F881E7E3A52003C6F84 /* AppDelegate.m in Sources */,
 				00E42F851E7E3A52003C6F84 /* main.m in Sources */,
+				0012099D1E96A55500682F02 /* FZYTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
