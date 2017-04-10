@@ -28,6 +28,9 @@
 #define FZYLog(...)
 #endif
 
+// UIView+FZYExtension
+#import "UIView+FZYExtension.h"
+
 #endif /* ifdef __OBJC__ */
 
 #endif /* PrefixHeader_pch */

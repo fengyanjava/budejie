@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0012099D1E96A55500682F02 /* FZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0012099C1E96A55500682F02 /* FZYTabBar.m */; };
+		0075272E1E9BE66A003E4861 /* UIView+FZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0075272D1E9BE66A003E4861 /* UIView+FZYExtension.m */; };
 		00A2207B1E818D1300BC1B50 /* FZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */; };
 		00E42F851E7E3A52003C6F84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E42F841E7E3A52003C6F84 /* main.m */; };
 		00E42F881E7E3A52003C6F84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E42F871E7E3A52003C6F84 /* AppDelegate.m */; };
@@ -17,6 +18,8 @@
 /* Begin PBXFileReference section */
 		0012099B1E96A55500682F02 /* FZYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBar.h; sourceTree = "<group>"; };
 		0012099C1E96A55500682F02 /* FZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBar.m; sourceTree = "<group>"; };
+		0075272C1E9BE66A003E4861 /* UIView+FZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FZYExtension.h"; sourceTree = "<group>"; };
+		0075272D1E9BE66A003E4861 /* UIView+FZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FZYExtension.m"; sourceTree = "<group>"; };
 		008D5F881E82E20B00E9FC62 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		00A220791E818D1300BC1B50 /* FZYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBarController.h; sourceTree = "<group>"; };
 		00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBarController.m; sourceTree = "<group>"; };
@@ -50,6 +53,8 @@
 				00E42F841E7E3A52003C6F84 /* main.m */,
 				0012099B1E96A55500682F02 /* FZYTabBar.h */,
 				0012099C1E96A55500682F02 /* FZYTabBar.m */,
+				0075272C1E9BE66A003E4861 /* UIView+FZYExtension.h */,
+				0075272D1E9BE66A003E4861 /* UIView+FZYExtension.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0075272E1E9BE66A003E4861 /* UIView+FZYExtension.m in Sources */,
 				00A2207B1E818D1300BC1B50 /* FZYTabBarController.m in Sources */,
 				00E42F881E7E3A52003C6F84 /* AppDelegate.m in Sources */,
 				00E42F851E7E3A52003C6F84 /* main.m in Sources */,
