@@ -10,7 +10,7 @@
 
 @interface UIView (FZYExtension)
 
-@property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGFloat fzy_width;
+@property (nonatomic, assign) CGFloat fzy_height;
 
 @end

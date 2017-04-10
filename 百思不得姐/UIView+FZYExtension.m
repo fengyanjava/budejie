@@ -10,23 +10,23 @@
 
 @implementation UIView (FZYExtension)
 
-- (CGFloat)width {
+- (CGFloat)fzy_width {
     return self.frame.size.width;
 }
 
-- (CGFloat)height {
+- (CGFloat)fzy_height {
     return self.frame.size.height;
 }
 
-- (void)setWidth:(CGFloat)width {
+- (void)setFzy_width:(CGFloat)fzy_width {
     CGRect frame = self.frame;
-    frame.size.width = width;
+    frame.size.width = fzy_width;
     self.frame = frame;
 }
 
-- (void)setHeight:(CGFloat)height {
+- (void)setFzy_height:(CGFloat)fzy_height {
     CGRect frame = self.frame;
-    frame.size.height = height;
+    frame.size.height = fzy_height;
     self.frame = frame;
 }
 
