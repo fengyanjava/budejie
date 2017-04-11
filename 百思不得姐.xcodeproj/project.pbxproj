@@ -7,26 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0012099D1E96A55500682F02 /* FZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0012099C1E96A55500682F02 /* FZYTabBar.m */; };
-		0075272E1E9BE66A003E4861 /* UIView+FZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0075272D1E9BE66A003E4861 /* UIView+FZYExtension.m */; };
-		00A2207B1E818D1300BC1B50 /* FZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */; };
-		00E42F851E7E3A52003C6F84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E42F841E7E3A52003C6F84 /* main.m */; };
-		00E42F881E7E3A52003C6F84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E42F871E7E3A52003C6F84 /* AppDelegate.m */; };
+		007FA1341E9D4386001080E1 /* FZYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1121E9D4386001080E1 /* FZYEssenceViewController.m */; };
+		007FA1351E9D4386001080E1 /* FZYFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1181E9D4386001080E1 /* FZYFollowViewController.m */; };
+		007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA11E1E9D4386001080E1 /* FZYMeViewController.m */; };
+		007FA1371E9D4386001080E1 /* FZYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1241E9D4386001080E1 /* FZYNewViewController.m */; };
+		007FA1381E9D4386001080E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1291E9D4386001080E1 /* AppDelegate.m */; };
+		007FA1391E9D4386001080E1 /* UIView+FZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA12C1E9D4386001080E1 /* UIView+FZYExtension.m */; };
+		007FA13A1E9D4386001080E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA12D1E9D4386001080E1 /* main.m */; };
+		007FA13B1E9D4386001080E1 /* FZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1311E9D4386001080E1 /* FZYTabBar.m */; };
+		007FA13C1E9D4386001080E1 /* FZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1331E9D4386001080E1 /* FZYTabBarController.m */; };
 		00E42F901E7E3A52003C6F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0012099B1E96A55500682F02 /* FZYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBar.h; sourceTree = "<group>"; };
-		0012099C1E96A55500682F02 /* FZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBar.m; sourceTree = "<group>"; };
-		0075272C1E9BE66A003E4861 /* UIView+FZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FZYExtension.h"; sourceTree = "<group>"; };
-		0075272D1E9BE66A003E4861 /* UIView+FZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FZYExtension.m"; sourceTree = "<group>"; };
-		008D5F881E82E20B00E9FC62 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		00A220791E818D1300BC1B50 /* FZYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBarController.h; sourceTree = "<group>"; };
-		00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBarController.m; sourceTree = "<group>"; };
+		007FA1111E9D4386001080E1 /* FZYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYEssenceViewController.h; sourceTree = "<group>"; };
+		007FA1121E9D4386001080E1 /* FZYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYEssenceViewController.m; sourceTree = "<group>"; };
+		007FA1171E9D4386001080E1 /* FZYFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYFollowViewController.h; sourceTree = "<group>"; };
+		007FA1181E9D4386001080E1 /* FZYFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYFollowViewController.m; sourceTree = "<group>"; };
+		007FA11D1E9D4386001080E1 /* FZYMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYMeViewController.h; sourceTree = "<group>"; };
+		007FA11E1E9D4386001080E1 /* FZYMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYMeViewController.m; sourceTree = "<group>"; };
+		007FA1231E9D4386001080E1 /* FZYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYNewViewController.h; sourceTree = "<group>"; };
+		007FA1241E9D4386001080E1 /* FZYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYNewViewController.m; sourceTree = "<group>"; };
+		007FA1281E9D4386001080E1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		007FA1291E9D4386001080E1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		007FA12B1E9D4386001080E1 /* UIView+FZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FZYExtension.h"; sourceTree = "<group>"; };
+		007FA12C1E9D4386001080E1 /* UIView+FZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FZYExtension.m"; sourceTree = "<group>"; };
+		007FA12D1E9D4386001080E1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		007FA12E1E9D4386001080E1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		007FA1301E9D4386001080E1 /* FZYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBar.h; sourceTree = "<group>"; };
+		007FA1311E9D4386001080E1 /* FZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBar.m; sourceTree = "<group>"; };
+		007FA1321E9D4386001080E1 /* FZYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBarController.h; sourceTree = "<group>"; };
+		007FA1331E9D4386001080E1 /* FZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBarController.m; sourceTree = "<group>"; };
 		00E42F801E7E3A52003C6F84 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		00E42F841E7E3A52003C6F84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		00E42F861E7E3A52003C6F84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		00E42F871E7E3A52003C6F84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E42F941E7E3A52003C6F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,21 +54,181 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		005521B01E7E8F2900C9B117 /* Classes */ = {
+		007FA10E1E9D4386001080E1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				00E42F861E7E3A52003C6F84 /* AppDelegate.h */,
-				00E42F871E7E3A52003C6F84 /* AppDelegate.m */,
-				00A220791E818D1300BC1B50 /* FZYTabBarController.h */,
-				00A2207A1E818D1300BC1B50 /* FZYTabBarController.m */,
-				008D5F881E82E20B00E9FC62 /* PrefixHeader.pch */,
-				00E42F841E7E3A52003C6F84 /* main.m */,
-				0012099B1E96A55500682F02 /* FZYTabBar.h */,
-				0012099C1E96A55500682F02 /* FZYTabBar.m */,
-				0075272C1E9BE66A003E4861 /* UIView+FZYExtension.h */,
-				0075272D1E9BE66A003E4861 /* UIView+FZYExtension.m */,
+				007FA10F1E9D4386001080E1 /* Essence */,
+				007FA1151E9D4386001080E1 /* Follow */,
+				007FA11B1E9D4386001080E1 /* Me */,
+				007FA1211E9D4386001080E1 /* New */,
+				007FA1271E9D4386001080E1 /* Other */,
+				007FA12F1E9D4386001080E1 /* TabBar */,
 			);
-			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		007FA10F1E9D4386001080E1 /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				007FA1101E9D4386001080E1 /* Controller */,
+				007FA1131E9D4386001080E1 /* Model */,
+				007FA1141E9D4386001080E1 /* View */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		007FA1101E9D4386001080E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				007FA1111E9D4386001080E1 /* FZYEssenceViewController.h */,
+				007FA1121E9D4386001080E1 /* FZYEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		007FA1131E9D4386001080E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		007FA1141E9D4386001080E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		007FA1151E9D4386001080E1 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				007FA1161E9D4386001080E1 /* Controller */,
+				007FA1191E9D4386001080E1 /* Model */,
+				007FA11A1E9D4386001080E1 /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		007FA1161E9D4386001080E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				007FA1171E9D4386001080E1 /* FZYFollowViewController.h */,
+				007FA1181E9D4386001080E1 /* FZYFollowViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		007FA1191E9D4386001080E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		007FA11A1E9D4386001080E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		007FA11B1E9D4386001080E1 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				007FA11C1E9D4386001080E1 /* Controller */,
+				007FA11F1E9D4386001080E1 /* Model */,
+				007FA1201E9D4386001080E1 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		007FA11C1E9D4386001080E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				007FA11D1E9D4386001080E1 /* FZYMeViewController.h */,
+				007FA11E1E9D4386001080E1 /* FZYMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		007FA11F1E9D4386001080E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		007FA1201E9D4386001080E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		007FA1211E9D4386001080E1 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				007FA1221E9D4386001080E1 /* Controller */,
+				007FA1251E9D4386001080E1 /* Model */,
+				007FA1261E9D4386001080E1 /* View */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		007FA1221E9D4386001080E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				007FA1231E9D4386001080E1 /* FZYNewViewController.h */,
+				007FA1241E9D4386001080E1 /* FZYNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		007FA1251E9D4386001080E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		007FA1261E9D4386001080E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		007FA1271E9D4386001080E1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				007FA1281E9D4386001080E1 /* AppDelegate.h */,
+				007FA1291E9D4386001080E1 /* AppDelegate.m */,
+				007FA12A1E9D4386001080E1 /* Category */,
+				007FA12D1E9D4386001080E1 /* main.m */,
+				007FA12E1E9D4386001080E1 /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		007FA12A1E9D4386001080E1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				007FA12B1E9D4386001080E1 /* UIView+FZYExtension.h */,
+				007FA12C1E9D4386001080E1 /* UIView+FZYExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		007FA12F1E9D4386001080E1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				007FA1301E9D4386001080E1 /* FZYTabBar.h */,
+				007FA1311E9D4386001080E1 /* FZYTabBar.m */,
+				007FA1321E9D4386001080E1 /* FZYTabBarController.h */,
+				007FA1331E9D4386001080E1 /* FZYTabBarController.m */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		00E42F771E7E3A52003C6F84 = {
@@ -78,7 +250,7 @@
 		00E42F821E7E3A52003C6F84 /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				005521B01E7E8F2900C9B117 /* Classes */,
+				007FA10E1E9D4386001080E1 /* Classes */,
 				00E42F831E7E3A52003C6F84 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -163,11 +335,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0075272E1E9BE66A003E4861 /* UIView+FZYExtension.m in Sources */,
-				00A2207B1E818D1300BC1B50 /* FZYTabBarController.m in Sources */,
-				00E42F881E7E3A52003C6F84 /* AppDelegate.m in Sources */,
-				00E42F851E7E3A52003C6F84 /* main.m in Sources */,
-				0012099D1E96A55500682F02 /* FZYTabBar.m in Sources */,
+				007FA1391E9D4386001080E1 /* UIView+FZYExtension.m in Sources */,
+				007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */,
+				007FA1341E9D4386001080E1 /* FZYEssenceViewController.m in Sources */,
+				007FA13B1E9D4386001080E1 /* FZYTabBar.m in Sources */,
+				007FA1351E9D4386001080E1 /* FZYFollowViewController.m in Sources */,
+				007FA1371E9D4386001080E1 /* FZYNewViewController.m in Sources */,
+				007FA13C1E9D4386001080E1 /* FZYTabBarController.m in Sources */,
+				007FA13A1E9D4386001080E1 /* main.m in Sources */,
+				007FA1381E9D4386001080E1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.feng.budejie;
@@ -274,7 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.feng.budejie;
