@@ -10,4 +10,11 @@
 
 @implementation FZYEssenceViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = FZYViewControllerBgColor;
+    
+}
+
 @end

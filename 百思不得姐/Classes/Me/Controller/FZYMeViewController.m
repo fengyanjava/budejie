@@ -10,4 +10,10 @@
 
 @implementation FZYMeViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = FZYViewControllerBgColor;
+}
+
 @end
