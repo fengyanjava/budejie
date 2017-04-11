@@ -13,4 +13,13 @@
 @property (nonatomic, assign) CGFloat fzy_width;
 @property (nonatomic, assign) CGFloat fzy_height;
 
+@property (nonatomic, assign) CGFloat fzy_x;
+@property (nonatomic, assign) CGFloat fzy_y;
+
+@property (nonatomic, assign) CGFloat fzy_centerX;
+@property (nonatomic, assign) CGFloat fzy_centerY;
+
+@property (nonatomic, assign) CGFloat fzy_right;
+@property (nonatomic, assign) CGFloat fzy_bottom;
+
 @end

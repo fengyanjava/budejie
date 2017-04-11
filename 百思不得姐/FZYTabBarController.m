@@ -19,6 +19,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupTabBarItemTextStyle];
+    
+    [self setupChildViewControllers];
+    
+    [self setValue:[[FZYTabBar alloc]init] forKey:@"tabBar"];
+    
+}
+
+- (void) setupChildViewControllers {
+    [self setupOneChildViewController:[[UITableViewController alloc]init] withTitle:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    
+    [self setupOneChildViewController:[[UIViewController alloc]init] withTitle:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    
+    [self setupOneChildViewController:[[UIViewController alloc]init] withTitle:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    
+    [self setupOneChildViewController:[[UIViewController alloc]init] withTitle:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+}
+
+- (void) setupTabBarItemTextStyle {
     // normal text attrs
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
     normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
@@ -33,28 +52,6 @@
     UITabBarItem *tabBarItem = [UITabBarItem appearance];
     [tabBarItem setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
     [tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-    
-    UITableViewController *vc0 = [[UITableViewController alloc]init];
-    [self setupOneChildViewController:vc0 withTitle:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
-    
-    UIViewController *vc1 = [[UIViewController alloc]init];
-    [self setupOneChildViewController:vc1 withTitle:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
-    
-//    [self setupOneChildViewController:[[UIViewController alloc]init] withTitle:nil image:nil selectedImage:nil];
-    
-    UITableViewController *vc2 = [[UITableViewController alloc]init];
-    [self setupOneChildViewController:vc2 withTitle:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
-    
-    UIViewController *vc3 = [[UIViewController alloc]init];
-    [self setupOneChildViewController:vc3 withTitle:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
-    
-    [self setValue:[[FZYTabBar alloc]init] forKey:@"tabBar"];
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
 }
 
 - (void) setupOneChildViewController:(UIViewController *)viewController withTitle:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage {
