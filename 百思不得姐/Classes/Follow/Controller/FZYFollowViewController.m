@@ -14,6 +14,14 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = FZYViewControllerBgColor;
+    
+    self.navigationItem.title = @"我的关注";
+    
+    self.navigationItem.leftBarButtonItem = [FZYItemManager itemWithImage:@"friendsRecommentIcon" imageHighlighted:@"friendsRecommentIcon-click" actionTarget:self actionSelector:@selector(followClick)];
+}
+
+- (void)followClick {
+    FZYFunc
 }
 
 @end

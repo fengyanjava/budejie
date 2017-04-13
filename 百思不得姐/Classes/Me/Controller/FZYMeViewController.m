@@ -14,6 +14,22 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = FZYViewControllerBgColor;
+    
+    self.navigationItem.title = @"我的";
+        
+    UIBarButtonItem *moonItem = [FZYItemManager itemWithImage:@"mine-moon-icon" imageHighlighted:@"mine-moon-icon-click" actionTarget:self actionSelector:@selector(moonClick)];
+    
+    UIBarButtonItem *settingItem = [FZYItemManager itemWithImage:@"mine-setting-icon" imageHighlighted:@"mine-setting-icon-click" actionTarget:self actionSelector:@selector(settingClick)];
+    
+    self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
+}
+
+- (void)settingClick {
+    FZYFunc
+}
+
+- (void)moonClick {
+    FZYFunc
 }
 
 @end

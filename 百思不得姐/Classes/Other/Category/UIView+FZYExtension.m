@@ -30,6 +30,16 @@
     self.frame = frame;
 }
 
+- (CGSize)fzy_size {
+    return self.frame.size;
+}
+
+- (void)setFzy_size:(CGSize)fzy_size {
+    CGRect frame = self.frame;
+    frame.size = fzy_size;
+    self.frame = frame;
+}
+
 - (CGFloat)fzy_x {
     return self.frame.origin.x;
 }

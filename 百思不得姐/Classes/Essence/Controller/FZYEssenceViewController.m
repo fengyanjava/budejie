@@ -15,6 +15,13 @@
     
     self.view.backgroundColor = FZYViewControllerBgColor;
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    self.navigationItem.leftBarButtonItem = [FZYItemManager itemWithImage:@"MainTagSubIcon" imageHighlighted:@"MainTagSubIconClick" actionTarget:self actionSelector:@selector(tagClick)];
+}
+
+- (void)tagClick {
+    FZYFunc
 }
 
 @end

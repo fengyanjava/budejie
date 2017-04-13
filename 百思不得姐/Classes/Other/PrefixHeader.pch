@@ -32,6 +32,9 @@
 // UIView+FZYExtension
 #import "UIView+FZYExtension.h"
 
+// Easy to create UIBarButtonItem
+#import "FZYItemManager.h"
+
 #endif /* ifdef __OBJC__ */
 
 #endif /* PrefixHeader_pch */
