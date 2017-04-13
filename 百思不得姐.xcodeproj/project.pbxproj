@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		006B06F71E9FE19800A98821 /* FZYItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006B06F61E9FE19800A98821 /* FZYItemManager.m */; };
+		006B06FA1E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 006B06F91E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.m */; };
 		007FA1341E9D4386001080E1 /* FZYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1121E9D4386001080E1 /* FZYEssenceViewController.m */; };
 		007FA1351E9D4386001080E1 /* FZYFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1181E9D4386001080E1 /* FZYFollowViewController.m */; };
 		007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA11E1E9D4386001080E1 /* FZYMeViewController.m */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		006B06F51E9FE19800A98821 /* FZYItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYItemManager.h; sourceTree = "<group>"; };
-		006B06F61E9FE19800A98821 /* FZYItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYItemManager.m; sourceTree = "<group>"; };
+		006B06F81E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FZYExtension.h"; sourceTree = "<group>"; };
+		006B06F91E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FZYExtension.m"; sourceTree = "<group>"; };
 		007FA1111E9D4386001080E1 /* FZYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYEssenceViewController.h; sourceTree = "<group>"; };
 		007FA1121E9D4386001080E1 /* FZYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYEssenceViewController.m; sourceTree = "<group>"; };
 		007FA1171E9D4386001080E1 /* FZYFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYFollowViewController.h; sourceTree = "<group>"; };
@@ -210,8 +210,6 @@
 				007FA12A1E9D4386001080E1 /* Category */,
 				007FA12D1E9D4386001080E1 /* main.m */,
 				007FA12E1E9D4386001080E1 /* PrefixHeader.pch */,
-				006B06F51E9FE19800A98821 /* FZYItemManager.h */,
-				006B06F61E9FE19800A98821 /* FZYItemManager.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -221,6 +219,8 @@
 			children = (
 				007FA12B1E9D4386001080E1 /* UIView+FZYExtension.h */,
 				007FA12C1E9D4386001080E1 /* UIView+FZYExtension.m */,
+				006B06F81E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.h */,
+				006B06F91E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -342,12 +342,12 @@
 			files = (
 				007FA1391E9D4386001080E1 /* UIView+FZYExtension.m in Sources */,
 				007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */,
-				006B06F71E9FE19800A98821 /* FZYItemManager.m in Sources */,
 				007FA1341E9D4386001080E1 /* FZYEssenceViewController.m in Sources */,
 				007FA13B1E9D4386001080E1 /* FZYTabBar.m in Sources */,
 				007FA1351E9D4386001080E1 /* FZYFollowViewController.m in Sources */,
 				007FA1371E9D4386001080E1 /* FZYNewViewController.m in Sources */,
 				007FA13C1E9D4386001080E1 /* FZYTabBarController.m in Sources */,
+				006B06FA1E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.m in Sources */,
 				007FA13A1E9D4386001080E1 /* main.m in Sources */,
 				007FA1381E9D4386001080E1 /* AppDelegate.m in Sources */,
 			);

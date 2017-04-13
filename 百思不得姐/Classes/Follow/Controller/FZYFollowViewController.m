@@ -17,7 +17,7 @@
     
     self.navigationItem.title = @"我的关注";
     
-    self.navigationItem.leftBarButtonItem = [FZYItemManager itemWithImage:@"friendsRecommentIcon" imageHighlighted:@"friendsRecommentIcon-click" actionTarget:self actionSelector:@selector(followClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" imageHighlighted:@"friendsRecommentIcon-click" actionTarget:self actionSelector:@selector(followClick)];
 }
 
 - (void)followClick {
