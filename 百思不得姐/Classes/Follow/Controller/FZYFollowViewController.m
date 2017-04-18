@@ -7,6 +7,7 @@
 //
 
 #import "FZYFollowViewController.h"
+#import "FZYTalentViewController.h"
 
 @implementation FZYFollowViewController
 
@@ -22,6 +23,10 @@
 
 - (void)followClick {
     FZYFunc
+    
+    UIViewController *vc = [[FZYTalentViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
