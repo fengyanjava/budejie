@@ -25,7 +25,6 @@
     FZYFunc
     
     UIViewController *vc = [[FZYTalentViewController alloc] init];
-    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

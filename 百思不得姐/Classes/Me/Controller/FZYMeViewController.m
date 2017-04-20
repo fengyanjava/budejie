@@ -7,6 +7,7 @@
 //
 
 #import "FZYMeViewController.h"
+#import "FZYSettingViewController.h"
 
 @implementation FZYMeViewController
 
@@ -26,6 +27,9 @@
 
 - (void)settingClick {
     FZYFunc
+    FZYSettingViewController *vc = [[FZYSettingViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)moonClick {

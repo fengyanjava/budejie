@@ -14,6 +14,7 @@
 #import "FZYNewViewController.h"
 #import "FZYFollowViewController.h"
 #import "FZYMeViewController.h"
+#import "FZYNavigationController.h"
 
 @interface FZYTabBarController ()
 
@@ -43,7 +44,7 @@
 }
 
 - (UINavigationController *)createNavigationControllerWithRootVC:(UIViewController *)rootVC {
-    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    UINavigationController *controller = [[FZYNavigationController alloc] initWithRootViewController:rootVC];
     return controller;
 }
 

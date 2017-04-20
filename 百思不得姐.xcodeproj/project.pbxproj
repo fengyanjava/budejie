@@ -18,6 +18,8 @@
 		007FA13B1E9D4386001080E1 /* FZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1311E9D4386001080E1 /* FZYTabBar.m */; };
 		007FA13C1E9D4386001080E1 /* FZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1331E9D4386001080E1 /* FZYTabBarController.m */; };
 		008E08A31EA6787500F0B4DF /* FZYTalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */; };
+		00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB401EA90AF7003B686F /* FZYSettingViewController.m */; };
+		00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB471EA90F75003B686F /* FZYNavigationController.m */; };
 		00E42F901E7E3A52003C6F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,10 @@
 		007FA1331E9D4386001080E1 /* FZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBarController.m; sourceTree = "<group>"; };
 		008E08A11EA6787500F0B4DF /* FZYTalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTalentViewController.h; sourceTree = "<group>"; };
 		008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTalentViewController.m; sourceTree = "<group>"; };
+		00A7EB3F1EA90AF7003B686F /* FZYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYSettingViewController.h; sourceTree = "<group>"; };
+		00A7EB401EA90AF7003B686F /* FZYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYSettingViewController.m; sourceTree = "<group>"; };
+		00A7EB461EA90F75003B686F /* FZYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYNavigationController.h; sourceTree = "<group>"; };
+		00A7EB471EA90F75003B686F /* FZYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYNavigationController.m; sourceTree = "<group>"; };
 		00E42F801E7E3A52003C6F84 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E42F941E7E3A52003C6F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 			children = (
 				007FA11D1E9D4386001080E1 /* FZYMeViewController.h */,
 				007FA11E1E9D4386001080E1 /* FZYMeViewController.m */,
+				00A7EB3F1EA90AF7003B686F /* FZYSettingViewController.h */,
+				00A7EB401EA90AF7003B686F /* FZYSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 			children = (
 				007FA1281E9D4386001080E1 /* AppDelegate.h */,
 				007FA1291E9D4386001080E1 /* AppDelegate.m */,
+				00A7EB451EA90F44003B686F /* Controller */,
 				007FA12A1E9D4386001080E1 /* Category */,
 				007FA12D1E9D4386001080E1 /* main.m */,
 				007FA12E1E9D4386001080E1 /* PrefixHeader.pch */,
@@ -239,6 +248,15 @@
 				007FA1331E9D4386001080E1 /* FZYTabBarController.m */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		00A7EB451EA90F44003B686F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00A7EB461EA90F75003B686F /* FZYNavigationController.h */,
+				00A7EB471EA90F75003B686F /* FZYNavigationController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		00E42F771E7E3A52003C6F84 = {
@@ -348,6 +366,8 @@
 				008E08A31EA6787500F0B4DF /* FZYTalentViewController.m in Sources */,
 				007FA1391E9D4386001080E1 /* UIView+FZYExtension.m in Sources */,
 				007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */,
+				00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */,
+				00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */,
 				007FA1341E9D4386001080E1 /* FZYEssenceViewController.m in Sources */,
 				007FA13B1E9D4386001080E1 /* FZYTabBar.m in Sources */,
 				007FA1351E9D4386001080E1 /* FZYFollowViewController.m in Sources */,
