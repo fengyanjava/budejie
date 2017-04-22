@@ -19,7 +19,6 @@
     self.view.backgroundColor = FZYRandomColor;
     
     self.navigationItem.title = @"设置";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"TTest" style:UIBarButtonItemStyleDone target:nil action:nil];
     
 }
 

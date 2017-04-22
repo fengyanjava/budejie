@@ -8,7 +8,7 @@
 
 #import "FZYNavigationController.h"
 
-@interface FZYNavigationController ()
+@interface FZYNavigationController () <UIGestureRecognizerDelegate>
 
 @end
 
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
@@ -42,6 +43,14 @@
 
 - (void)backClick {
     [self popViewControllerAnimated:YES];
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+//    if (self.childViewControllers.count == 1) {
+//        return NO;
+//    }
+//    return YES;
+    return self.childViewControllers.count > 1;
 }
 
 @end
