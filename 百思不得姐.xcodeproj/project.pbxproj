@@ -17,6 +17,10 @@
 		007FA13A1E9D4386001080E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA12D1E9D4386001080E1 /* main.m */; };
 		007FA13B1E9D4386001080E1 /* FZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1311E9D4386001080E1 /* FZYTabBar.m */; };
 		007FA13C1E9D4386001080E1 /* FZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1331E9D4386001080E1 /* FZYTabBarController.m */; };
+		008764021EAE5060001401B4 /* FZYFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008764011EAE5060001401B4 /* FZYFollowViewController.xib */; };
+		008764061EAE5C53001401B4 /* FZYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008764041EAE5C53001401B4 /* FZYLoginRegisterViewController.m */; };
+		008764071EAE5C53001401B4 /* FZYLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008764051EAE5C53001401B4 /* FZYLoginRegisterViewController.xib */; };
+		0087640C1EAE6DF0001401B4 /* FZYQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0087640B1EAE6DF0001401B4 /* FZYQuickLoginButton.m */; };
 		008E08A31EA6787500F0B4DF /* FZYTalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */; };
 		00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB401EA90AF7003B686F /* FZYSettingViewController.m */; };
 		00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB471EA90F75003B686F /* FZYNavigationController.m */; };
@@ -44,6 +48,12 @@
 		007FA1311E9D4386001080E1 /* FZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBar.m; sourceTree = "<group>"; };
 		007FA1321E9D4386001080E1 /* FZYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTabBarController.h; sourceTree = "<group>"; };
 		007FA1331E9D4386001080E1 /* FZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBarController.m; sourceTree = "<group>"; };
+		008764011EAE5060001401B4 /* FZYFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZYFollowViewController.xib; sourceTree = "<group>"; };
+		008764031EAE5C53001401B4 /* FZYLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYLoginRegisterViewController.h; sourceTree = "<group>"; };
+		008764041EAE5C53001401B4 /* FZYLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYLoginRegisterViewController.m; sourceTree = "<group>"; };
+		008764051EAE5C53001401B4 /* FZYLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZYLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		0087640A1EAE6DF0001401B4 /* FZYQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYQuickLoginButton.h; sourceTree = "<group>"; };
+		0087640B1EAE6DF0001401B4 /* FZYQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYQuickLoginButton.m; sourceTree = "<group>"; };
 		008E08A11EA6787500F0B4DF /* FZYTalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTalentViewController.h; sourceTree = "<group>"; };
 		008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTalentViewController.m; sourceTree = "<group>"; };
 		00A7EB3F1EA90AF7003B686F /* FZYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYSettingViewController.h; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 			children = (
 				007FA1171E9D4386001080E1 /* FZYFollowViewController.h */,
 				007FA1181E9D4386001080E1 /* FZYFollowViewController.m */,
+				008764011EAE5060001401B4 /* FZYFollowViewController.xib */,
 				008E08A11EA6787500F0B4DF /* FZYTalentViewController.h */,
 				008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */,
 			);
@@ -222,6 +233,7 @@
 				007FA1291E9D4386001080E1 /* AppDelegate.m */,
 				00A7EB451EA90F44003B686F /* Controller */,
 				007FA12A1E9D4386001080E1 /* Category */,
+				008764091EAE6DD3001401B4 /* View */,
 				007FA12D1E9D4386001080E1 /* main.m */,
 				007FA12E1E9D4386001080E1 /* PrefixHeader.pch */,
 			);
@@ -250,11 +262,23 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		008764091EAE6DD3001401B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0087640A1EAE6DF0001401B4 /* FZYQuickLoginButton.h */,
+				0087640B1EAE6DF0001401B4 /* FZYQuickLoginButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		00A7EB451EA90F44003B686F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				00A7EB461EA90F75003B686F /* FZYNavigationController.h */,
 				00A7EB471EA90F75003B686F /* FZYNavigationController.m */,
+				008764031EAE5C53001401B4 /* FZYLoginRegisterViewController.h */,
+				008764041EAE5C53001401B4 /* FZYLoginRegisterViewController.m */,
+				008764051EAE5C53001401B4 /* FZYLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -352,7 +376,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008764071EAE5C53001401B4 /* FZYLoginRegisterViewController.xib in Resources */,
 				00E42F901E7E3A52003C6F84 /* Assets.xcassets in Resources */,
+				008764021EAE5060001401B4 /* FZYFollowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +391,7 @@
 			files = (
 				008E08A31EA6787500F0B4DF /* FZYTalentViewController.m in Sources */,
 				007FA1391E9D4386001080E1 /* UIView+FZYExtension.m in Sources */,
+				008764061EAE5C53001401B4 /* FZYLoginRegisterViewController.m in Sources */,
 				007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */,
 				00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */,
 				00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */,
@@ -373,6 +400,7 @@
 				007FA1351E9D4386001080E1 /* FZYFollowViewController.m in Sources */,
 				007FA1371E9D4386001080E1 /* FZYNewViewController.m in Sources */,
 				007FA13C1E9D4386001080E1 /* FZYTabBarController.m in Sources */,
+				0087640C1EAE6DF0001401B4 /* FZYQuickLoginButton.m in Sources */,
 				006B06FA1E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.m in Sources */,
 				007FA13A1E9D4386001080E1 /* main.m in Sources */,
 				007FA1381E9D4386001080E1 /* AppDelegate.m in Sources */,

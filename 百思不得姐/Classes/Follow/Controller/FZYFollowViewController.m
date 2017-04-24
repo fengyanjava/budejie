@@ -8,6 +8,7 @@
 
 #import "FZYFollowViewController.h"
 #import "FZYTalentViewController.h"
+#import "FZYLoginRegisterViewController.h"
 
 @implementation FZYFollowViewController
 
@@ -26,6 +27,11 @@
     
     UIViewController *vc = [[FZYTalentViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)loginRegisterClick {
+    FZYLoginRegisterViewController *loginVC = [[FZYLoginRegisterViewController alloc] init];
+    [self presentViewController:loginVC animated:YES completion:nil];
 }
 
 @end

@@ -29,6 +29,8 @@
     
     [self setupChildViewControllers];
     
+    [self setSelectedIndex:2];
+    
     [self setValue:[[FZYTabBar alloc]init] forKey:@"tabBar"];
     
 }
