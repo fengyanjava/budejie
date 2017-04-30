@@ -29,6 +29,24 @@
 //    free(ivarList);
     
     [self setPlaceholderTextColor:[UIColor grayColor]];
+    
+//    [self addTarget:self action:@selector(editingDidBegin) forControlEvents:UIControlEventEditingDidBegin];
+//    [self addTarget:self action:@selector(editingDidEnd) forControlEvents:UIControlEventEditingDidEnd];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(editingDidBegin) name:UITextFieldTextDidBeginEditingNotification object:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(editingDidEnd) name:UITextFieldTextDidEndEditingNotification object:self];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)editingDidBegin {
+    [self setPlaceholderTextColor:[UIColor whiteColor]];
+}
+
+- (void)editingDidEnd {
+    [self setPlaceholderTextColor:[UIColor grayColor]];
 }
 
 - (void)setPlaceholderTextColor:(UIColor *)color {
