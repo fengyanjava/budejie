@@ -35,6 +35,9 @@
 // UIBarButtonItem+FZYExtension.h
 #import "UIBarButtonItem+FZYExtension.h"
 
+// UITextField
+#import "UITextField+FZYExtension.h"
+
 #endif /* ifdef __OBJC__ */
 
 #endif /* PrefixHeader_pch */

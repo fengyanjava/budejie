@@ -42,15 +42,11 @@
 }
 
 - (void)editingDidBegin {
-    [self setPlaceholderTextColor:[UIColor whiteColor]];
+    self.placeholderColor = [UIColor whiteColor];
 }
 
 - (void)editingDidEnd {
-    [self setPlaceholderTextColor:[UIColor grayColor]];
-}
-
-- (void)setPlaceholderTextColor:(UIColor *)color {
-    [self setValue:color forKeyPath:@"placeholderLabel.textColor"];
+    self.placeholderColor = [UIColor grayColor];
 }
 
 @end
