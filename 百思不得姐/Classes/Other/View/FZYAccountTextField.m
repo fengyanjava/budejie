@@ -28,7 +28,7 @@
 //    
 //    free(ivarList);
     
-    [self setPlaceholderTextColor:[UIColor grayColor]];
+    self.placeholderColor = [UIColor grayColor];
     
 //    [self addTarget:self action:@selector(editingDidBegin) forControlEvents:UIControlEventEditingDidBegin];
 //    [self addTarget:self action:@selector(editingDidEnd) forControlEvents:UIControlEventEditingDidEnd];
