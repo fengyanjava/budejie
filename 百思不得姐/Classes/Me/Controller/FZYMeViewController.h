@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FZYMeViewController : UIViewController
+@interface FZYMeViewController : UITableViewController
 
 @end
