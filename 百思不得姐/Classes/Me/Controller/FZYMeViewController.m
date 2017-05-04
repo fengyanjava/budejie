@@ -8,6 +8,8 @@
 
 #import "FZYMeViewController.h"
 #import "FZYSettingViewController.h"
+#import "FZYMeCell.h"
+#import "FZYMeFooterView.h"
 
 @implementation FZYMeViewController
 
@@ -20,6 +22,20 @@
     
     self.view.backgroundColor = FZYViewControllerBgColor;
     
+    [self setupNav];
+    
+    [self setupTableView];
+}
+
+- (void)setupTableView {
+    self.tableView.sectionHeaderHeight = 0;
+    self.tableView.sectionFooterHeight = FZY_Margin;
+    self.tableView.contentInset = UIEdgeInsetsMake(FZY_Margin - 35, 0, 0, 0);
+    
+    self.tableView.tableFooterView = [[FZYMeFooterView alloc] init];
+}
+
+- (void)setupNav {
     self.navigationItem.title = @"我的";
         
     UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" imageHighlighted:@"mine-moon-icon-click" actionTarget:self actionSelector:@selector(moonClick)];
@@ -27,11 +43,6 @@
     UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" imageHighlighted:@"mine-setting-icon-click" actionTarget:self actionSelector:@selector(settingClick)];
     
     self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
-    
-    self.tableView.sectionHeaderHeight = 0;
-    self.tableView.sectionFooterHeight = 10;
-    
-    self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
 }
 
 - (void)settingClick {
@@ -47,7 +58,7 @@
 
 #pragma mark - 数据源方法
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -55,14 +66,19 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    static NSString *ID = @"me";
+    FZYMeCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[FZYMeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"row %zd", indexPath.section];
+    if (indexPath.section == 0) {
+        cell.imageView.image = [UIImage imageNamed:@"publish-audio"];
+        cell.textLabel.text = @"登录/注册";
+    } else if (indexPath.section == 1) {
+        cell.imageView.image = nil;
+        cell.textLabel.text = @"离线下载";
+    }
     
     return cell;
 }
