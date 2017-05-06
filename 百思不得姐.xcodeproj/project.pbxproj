@@ -22,11 +22,15 @@
 		008764061EAE5C53001401B4 /* FZYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008764041EAE5C53001401B4 /* FZYLoginRegisterViewController.m */; };
 		008764071EAE5C53001401B4 /* FZYLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008764051EAE5C53001401B4 /* FZYLoginRegisterViewController.xib */; };
 		0087640C1EAE6DF0001401B4 /* FZYQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0087640B1EAE6DF0001401B4 /* FZYQuickLoginButton.m */; };
+		008DFD881EBB7E6D00B4185C /* FZYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DFD871EBB7E6D00B4185C /* FZYConst.m */; };
+		008DFD8B1EBB807500B4185C /* FZYMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DFD8A1EBB807500B4185C /* FZYMeCell.m */; };
+		008DFD8E1EBB8CE500B4185C /* FZYMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DFD8D1EBB8CE500B4185C /* FZYMeFooterView.m */; };
 		008E08A31EA6787500F0B4DF /* FZYTalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */; };
 		008E933F1EB79F4D00B9C672 /* UITextField+FZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E933E1EB79F4D00B9C672 /* UITextField+FZYExtension.m */; };
 		00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB401EA90AF7003B686F /* FZYSettingViewController.m */; };
 		00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB471EA90F75003B686F /* FZYNavigationController.m */; };
 		00E42F901E7E3A52003C6F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */; };
+		6AF3A2D2B3FB7044462A73D6 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA60B4E6849CFB583BAE8E7 /* libPods-百思不得姐.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,12 @@
 		008764051EAE5C53001401B4 /* FZYLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZYLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		0087640A1EAE6DF0001401B4 /* FZYQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYQuickLoginButton.h; sourceTree = "<group>"; };
 		0087640B1EAE6DF0001401B4 /* FZYQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYQuickLoginButton.m; sourceTree = "<group>"; };
+		008DFD861EBB7E6D00B4185C /* FZYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYConst.h; sourceTree = "<group>"; };
+		008DFD871EBB7E6D00B4185C /* FZYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYConst.m; sourceTree = "<group>"; };
+		008DFD891EBB807500B4185C /* FZYMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYMeCell.h; sourceTree = "<group>"; };
+		008DFD8A1EBB807500B4185C /* FZYMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYMeCell.m; sourceTree = "<group>"; };
+		008DFD8C1EBB8CE500B4185C /* FZYMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYMeFooterView.h; sourceTree = "<group>"; };
+		008DFD8D1EBB8CE500B4185C /* FZYMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYMeFooterView.m; sourceTree = "<group>"; };
 		008E08A11EA6787500F0B4DF /* FZYTalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYTalentViewController.h; sourceTree = "<group>"; };
 		008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTalentViewController.m; sourceTree = "<group>"; };
 		008E933D1EB79F4D00B9C672 /* UITextField+FZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+FZYExtension.h"; sourceTree = "<group>"; };
@@ -69,6 +79,9 @@
 		00E42F801E7E3A52003C6F84 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E42F941E7E3A52003C6F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0356B583FD601C11101B8FDC /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
+		6D9F77D57695BCBF9F195308 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
+		7AA60B4E6849CFB583BAE8E7 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF3A2D2B3FB7044462A73D6 /* libPods-百思不得姐.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +209,10 @@
 		007FA1201E9D4386001080E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				008DFD891EBB807500B4185C /* FZYMeCell.h */,
+				008DFD8A1EBB807500B4185C /* FZYMeCell.m */,
+				008DFD8C1EBB8CE500B4185C /* FZYMeFooterView.h */,
+				008DFD8D1EBB8CE500B4185C /* FZYMeFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +260,8 @@
 				008764091EAE6DD3001401B4 /* View */,
 				007FA12D1E9D4386001080E1 /* main.m */,
 				007FA12E1E9D4386001080E1 /* PrefixHeader.pch */,
+				008DFD861EBB7E6D00B4185C /* FZYConst.h */,
+				008DFD871EBB7E6D00B4185C /* FZYConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -298,6 +318,8 @@
 			children = (
 				00E42F821E7E3A52003C6F84 /* 百思不得姐 */,
 				00E42F811E7E3A52003C6F84 /* Products */,
+				AFAD2050279F0A09FC9D60BF /* Pods */,
+				ED07215865CF93B6FDEB7469 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -327,6 +349,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AFAD2050279F0A09FC9D60BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D9F77D57695BCBF9F195308 /* Pods-百思不得姐.debug.xcconfig */,
+				0356B583FD601C11101B8FDC /* Pods-百思不得姐.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED07215865CF93B6FDEB7469 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AA60B4E6849CFB583BAE8E7 /* libPods-百思不得姐.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,9 +373,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E42F971E7E3A52003C6F84 /* Build configuration list for PBXNativeTarget "百思不得姐" */;
 			buildPhases = (
+				1012DF62F86024B3526F8C5D /* [CP] Check Pods Manifest.lock */,
 				00E42F7C1E7E3A52003C6F84 /* Sources */,
 				00E42F7D1E7E3A52003C6F84 /* Frameworks */,
 				00E42F7E1E7E3A52003C6F84 /* Resources */,
+				1642821381E04BCA1A269945 /* [CP] Embed Pods Frameworks */,
+				285E0B9F1BFFF5317B7E9860 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -394,16 +436,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1012DF62F86024B3526F8C5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1642821381E04BCA1A269945 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		285E0B9F1BFFF5317B7E9860 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00E42F7C1E7E3A52003C6F84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				008E08A31EA6787500F0B4DF /* FZYTalentViewController.m in Sources */,
+				008DFD8B1EBB807500B4185C /* FZYMeCell.m in Sources */,
 				007FA1391E9D4386001080E1 /* UIView+FZYExtension.m in Sources */,
 				008E933F1EB79F4D00B9C672 /* UITextField+FZYExtension.m in Sources */,
 				008764061EAE5C53001401B4 /* FZYLoginRegisterViewController.m in Sources */,
 				007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */,
+				008DFD881EBB7E6D00B4185C /* FZYConst.m in Sources */,
 				00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */,
 				00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */,
 				007FA1341E9D4386001080E1 /* FZYEssenceViewController.m in Sources */,
@@ -414,6 +506,7 @@
 				0087640C1EAE6DF0001401B4 /* FZYQuickLoginButton.m in Sources */,
 				006B06FA1E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.m in Sources */,
 				007FA13A1E9D4386001080E1 /* main.m in Sources */,
+				008DFD8E1EBB8CE500B4185C /* FZYMeFooterView.m in Sources */,
 				007FA1381E9D4386001080E1 /* AppDelegate.m in Sources */,
 				008081CE1EB3AA1700DA82F5 /* FZYAccountTextField.m in Sources */,
 			);
@@ -506,6 +599,7 @@
 		};
 		00E42F981E7E3A52003C6F84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9F77D57695BCBF9F195308 /* Pods-百思不得姐.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -519,6 +613,7 @@
 		};
 		00E42F991E7E3A52003C6F84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0356B583FD601C11101B8FDC /* Pods-百思不得姐.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
