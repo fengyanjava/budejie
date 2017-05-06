@@ -19,6 +19,10 @@ DerivedData
 *.xcworkspace
 !default.xcworkspace
 
+*.xcuserdatad
+xcuserdata
+*.xcuserstate
+
 #CocoaPods
 Pods
 !Podfile
