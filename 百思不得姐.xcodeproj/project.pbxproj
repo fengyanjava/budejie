@@ -30,6 +30,7 @@
 		00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB401EA90AF7003B686F /* FZYSettingViewController.m */; };
 		00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB471EA90F75003B686F /* FZYNavigationController.m */; };
 		00E42F901E7E3A52003C6F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */; };
+		00F61F541EBF7E480054ECE5 /* FZYMeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F61F531EBF7E480054ECE5 /* FZYMeSquare.m */; };
 		6AF3A2D2B3FB7044462A73D6 /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA60B4E6849CFB583BAE8E7 /* libPods-百思不得姐.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		00E42F801E7E3A52003C6F84 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E42F941E7E3A52003C6F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F61F521EBF7E480054ECE5 /* FZYMeSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYMeSquare.h; sourceTree = "<group>"; };
+		00F61F531EBF7E480054ECE5 /* FZYMeSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYMeSquare.m; sourceTree = "<group>"; };
 		0356B583FD601C11101B8FDC /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		6D9F77D57695BCBF9F195308 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA60B4E6849CFB583BAE8E7 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +205,8 @@
 		007FA11F1E9D4386001080E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00F61F521EBF7E480054ECE5 /* FZYMeSquare.h */,
+				00F61F531EBF7E480054ECE5 /* FZYMeSquare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -495,6 +500,7 @@
 				008E933F1EB79F4D00B9C672 /* UITextField+FZYExtension.m in Sources */,
 				008764061EAE5C53001401B4 /* FZYLoginRegisterViewController.m in Sources */,
 				007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */,
+				00F61F541EBF7E480054ECE5 /* FZYMeSquare.m in Sources */,
 				008DFD881EBB7E6D00B4185C /* FZYConst.m in Sources */,
 				00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */,
 				00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */,

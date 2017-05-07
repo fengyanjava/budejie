@@ -1,6 +1,7 @@
-platform :ios, ‘9.0’
+platform :ios, '9.0'
 
-target ‘百思不得姐’ do
+target '百思不得姐' do
     pod 'AFNetworking'
-    pod ‘SDWebImage’
+    pod 'SDWebImage'
+    pod 'MJExtension'
 end
