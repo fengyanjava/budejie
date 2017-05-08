@@ -27,6 +27,7 @@
 		008DFD8E1EBB8CE500B4185C /* FZYMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DFD8D1EBB8CE500B4185C /* FZYMeFooterView.m */; };
 		008E08A31EA6787500F0B4DF /* FZYTalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */; };
 		008E933F1EB79F4D00B9C672 /* UITextField+FZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E933E1EB79F4D00B9C672 /* UITextField+FZYExtension.m */; };
+		00A531B41EC0D56F00BE8B75 /* FZYMeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A531B31EC0D56F00BE8B75 /* FZYMeSquareButton.m */; };
 		00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB401EA90AF7003B686F /* FZYSettingViewController.m */; };
 		00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB471EA90F75003B686F /* FZYNavigationController.m */; };
 		00E42F901E7E3A52003C6F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E42F8F1E7E3A52003C6F84 /* Assets.xcassets */; };
@@ -73,6 +74,8 @@
 		008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTalentViewController.m; sourceTree = "<group>"; };
 		008E933D1EB79F4D00B9C672 /* UITextField+FZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+FZYExtension.h"; sourceTree = "<group>"; };
 		008E933E1EB79F4D00B9C672 /* UITextField+FZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+FZYExtension.m"; sourceTree = "<group>"; };
+		00A531B21EC0D56F00BE8B75 /* FZYMeSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYMeSquareButton.h; sourceTree = "<group>"; };
+		00A531B31EC0D56F00BE8B75 /* FZYMeSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYMeSquareButton.m; sourceTree = "<group>"; };
 		00A7EB3F1EA90AF7003B686F /* FZYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYSettingViewController.h; sourceTree = "<group>"; };
 		00A7EB401EA90AF7003B686F /* FZYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYSettingViewController.m; sourceTree = "<group>"; };
 		00A7EB461EA90F75003B686F /* FZYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYNavigationController.h; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				008DFD8A1EBB807500B4185C /* FZYMeCell.m */,
 				008DFD8C1EBB8CE500B4185C /* FZYMeFooterView.h */,
 				008DFD8D1EBB8CE500B4185C /* FZYMeFooterView.m */,
+				00A531B21EC0D56F00BE8B75 /* FZYMeSquareButton.h */,
+				00A531B31EC0D56F00BE8B75 /* FZYMeSquareButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 				008DFD881EBB7E6D00B4185C /* FZYConst.m in Sources */,
 				00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */,
 				00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */,
+				00A531B41EC0D56F00BE8B75 /* FZYMeSquareButton.m in Sources */,
 				007FA1341E9D4386001080E1 /* FZYEssenceViewController.m in Sources */,
 				007FA13B1E9D4386001080E1 /* FZYTabBar.m in Sources */,
 				007FA1351E9D4386001080E1 /* FZYFollowViewController.m in Sources */,

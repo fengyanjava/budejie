@@ -12,13 +12,13 @@
 #import <MJExtension.h>
 #import <UIImageView+WebCache.h>
 #import <UIButton+WebCache.h>
+#import "FZYMeSquareButton.h"
 
 @implementation FZYMeFooterView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor redColor];
-        self.fzy_height = 300;
+        self.backgroundColor = [UIColor whiteColor];
         [self getSquareData];
     }
     return self;
@@ -47,9 +47,11 @@
     CGFloat buttonH = buttonW;
     
     for (int i = 0; i < squareCount; i++) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        FZYMeSquareButton *button = [FZYMeSquareButton buttonWithType:UIButtonTypeCustom];
 //        button.backgroundColor = FZYRandomColor;
         [self addSubview:button];
+        
+        [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
         button.fzy_x = i % columnCount * buttonW;
         button.fzy_y = i / columnCount * buttonH;
@@ -65,8 +67,16 @@
 //        }];
         
         [button sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"setup-head-default"]];
-        
     }
+    
+    self.fzy_height = self.subviews.lastObject.fzy_bottom;
+    
+    UITableView *tableView = (UITableView *)self.superview;
+    tableView.contentSize = CGSizeMake(0, self.fzy_bottom);
+}
+
+- (void)buttonClick:(UIButton *)button {
+    FZYFunc;
 }
 
 @end
