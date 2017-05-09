@@ -72,7 +72,9 @@
     self.fzy_height = self.subviews.lastObject.fzy_bottom;
     
     UITableView *tableView = (UITableView *)self.superview;
-    tableView.contentSize = CGSizeMake(0, self.fzy_bottom);
+    tableView.tableFooterView = self;
+    [tableView reloadData];
+//    tableView.contentSize = CGSizeMake(0, self.fzy_bottom);
 }
 
 - (void)buttonClick:(UIButton *)button {
