@@ -48,7 +48,7 @@
     
     for (int i = 0; i < squareCount; i++) {
         FZYMeSquareButton *button = [FZYMeSquareButton buttonWithType:UIButtonTypeCustom];
-//        button.backgroundColor = FZYRandomColor;
+        [button setBackgroundImage:[UIImage imageNamed:@"mainCellBackground"] forState:UIControlStateNormal];
         [self addSubview:button];
         
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
