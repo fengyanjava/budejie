@@ -14,6 +14,12 @@
 #import <UIButton+WebCache.h>
 #import "FZYMeSquareButton.h"
 
+@interface FZYMeFooterView ()
+
+@property (nonatomic, strong) NSArray<FZYMeSquare*> *meSquares;
+
+@end
+
 @implementation FZYMeFooterView
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -33,6 +39,7 @@
 //            NSLog(@"success %@ %@", [responseObject class], responseObject);
         NSArray *squares = [FZYMeSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
         [self createSquares:squares];
+        self.meSquares = squares;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"failure %@", error);
     }];
@@ -78,7 +85,13 @@
 }
 
 - (void)buttonClick:(UIButton *)button {
-    FZYFunc;
+    //FZYFunc;
+    NSInteger index = [self.subviews indexOfObject:button];
+    FZYMeSquare *square = self.meSquares[index];
+    if ([square.url hasPrefix:@"http"]) {
+        
+    }
+    
 }
 
 @end
