@@ -13,6 +13,7 @@
 #import <UIImageView+WebCache.h>
 #import <UIButton+WebCache.h>
 #import "FZYMeSquareButton.h"
+#import "FZYWebViewController.h"
 
 @interface FZYMeFooterView ()
 
@@ -89,7 +90,14 @@
     NSInteger index = [self.subviews indexOfObject:button];
     FZYMeSquare *square = self.meSquares[index];
     if ([square.url hasPrefix:@"http"]) {
+        FZYWebViewController *webViewController = [[FZYWebViewController alloc] init];
+        webViewController.url = square.url;
+        webViewController.navigationItem.title = square.name;
         
+        UITabBarController *tabBarVC = (UITabBarController *)self.window.rootViewController;
+//        UINavigationController *navVC = tabBarVC.childViewControllers[tabBarVC.selectedIndex];
+        UINavigationController *navVC = tabBarVC.selectedViewController;
+        [navVC pushViewController:webViewController animated:YES];
     }
     
 }
