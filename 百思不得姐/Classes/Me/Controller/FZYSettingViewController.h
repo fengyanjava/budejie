@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FZYSettingViewController : UIViewController
+@interface FZYSettingViewController : UITableViewController
 
 @end
