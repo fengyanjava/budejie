@@ -25,7 +25,7 @@
     
     self.navigationItem.title = @"设置";
     
-    [self getCacheSize];
+//    [self getCacheSize];
 }
 
 - (void)getCacheSize {
@@ -67,7 +67,18 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
     
-    cell.textLabel.text = @"设置";
+    NSUInteger cacheSize = [[SDImageCache sharedImageCache] getSize];
+    NSString *cacheSizeStr;
+    if (cacheSize > 1000000) {
+        cacheSizeStr = [NSString stringWithFormat:@"%.2fMB", 1.0f * cacheSize / 1000000];
+    } else if (cacheSize > 1000) {
+        cacheSizeStr = [NSString stringWithFormat:@"%.2fKB", 1.0f * cacheSize / 1000];
+    } else {
+        cacheSizeStr = [NSString stringWithFormat:@"%zdBytes", cacheSize];
+    }
+    
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"清除缓存（%@）", cacheSizeStr];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
