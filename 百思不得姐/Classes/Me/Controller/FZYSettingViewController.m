@@ -7,7 +7,9 @@
 //
 
 #import "FZYSettingViewController.h"
-#import <SDImageCache.h>
+#import "FZYSettingClearCacheCell.h"
+
+static NSString * const ClearCacheID = @"clear_cache";
 
 @interface FZYSettingViewController ()
 
@@ -25,31 +27,8 @@
     
     self.navigationItem.title = @"设置";
     
-//    [self getCacheSize];
-}
-
-- (void)getCacheSize {
-    NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
-    NSString *path = [cachePath stringByAppendingPathComponent:@"default"];
-//    FZYLog(@"%@", path);
+    [self.tableView registerClass:[FZYSettingClearCacheCell class] forCellReuseIdentifier:ClearCacheID];
     
-    NSFileManager *manager = [NSFileManager defaultManager];
-//    NSDictionary *attrs = [manager attributesOfItemAtPath:path error:nil];
-//    FZYLog(@"%@", attrs);
-    
-    NSArray *subPaths = [manager subpathsAtPath:path];
-//    FZYLog(@"%@", subPaths);
-    
-    NSUInteger size = 0;
-    
-    for (NSString *subPath in subPaths) {
-        NSString *fullPath = [path stringByAppendingPathComponent:subPath];
-        NSDictionary *attrs = [manager attributesOfItemAtPath:fullPath error:nil];
-//        size += [attrs[NSFileSize] unsignedIntegerValue];
-        size += attrs.fileSize;
-    }
-    
-    FZYLog(@"%zd", size);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -61,27 +40,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"setting";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
     
-    NSUInteger cacheSize = [[SDImageCache sharedImageCache] getSize];
-    NSString *cacheSizeStr;
-    if (cacheSize > 1000000) {
-        cacheSizeStr = [NSString stringWithFormat:@"%.2fMB", 1.0f * cacheSize / 1000000];
-    } else if (cacheSize > 1000) {
-        cacheSizeStr = [NSString stringWithFormat:@"%.2fKB", 1.0f * cacheSize / 1000];
-    } else {
-        cacheSizeStr = [NSString stringWithFormat:@"%zdBytes", cacheSize];
-    }
-    
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"清除缓存（%@）", cacheSizeStr];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    FZYSettingClearCacheCell *cell = [tableView dequeueReusableCellWithIdentifier:ClearCacheID];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    FZYFunc;
 }
 
 @end

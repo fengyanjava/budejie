@@ -29,6 +29,8 @@
 		008DFD8E1EBB8CE500B4185C /* FZYMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DFD8D1EBB8CE500B4185C /* FZYMeFooterView.m */; };
 		008E08A31EA6787500F0B4DF /* FZYTalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */; };
 		008E933F1EB79F4D00B9C672 /* UITextField+FZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E933E1EB79F4D00B9C672 /* UITextField+FZYExtension.m */; };
+		009A54531EDB29AC0087F79F /* FZYFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A54521EDB29AC0087F79F /* FZYFileUtils.m */; };
+		009A54561EDB2DAD0087F79F /* FZYSettingClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A54551EDB2DAD0087F79F /* FZYSettingClearCacheCell.m */; };
 		00A531B41EC0D56F00BE8B75 /* FZYMeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A531B31EC0D56F00BE8B75 /* FZYMeSquareButton.m */; };
 		00A7EB411EA90AF7003B686F /* FZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB401EA90AF7003B686F /* FZYSettingViewController.m */; };
 		00A7EB481EA90F75003B686F /* FZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EB471EA90F75003B686F /* FZYNavigationController.m */; };
@@ -79,6 +81,10 @@
 		008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTalentViewController.m; sourceTree = "<group>"; };
 		008E933D1EB79F4D00B9C672 /* UITextField+FZYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+FZYExtension.h"; sourceTree = "<group>"; };
 		008E933E1EB79F4D00B9C672 /* UITextField+FZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+FZYExtension.m"; sourceTree = "<group>"; };
+		009A54511EDB29AC0087F79F /* FZYFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYFileUtils.h; sourceTree = "<group>"; };
+		009A54521EDB29AC0087F79F /* FZYFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYFileUtils.m; sourceTree = "<group>"; };
+		009A54541EDB2DAD0087F79F /* FZYSettingClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYSettingClearCacheCell.h; sourceTree = "<group>"; };
+		009A54551EDB2DAD0087F79F /* FZYSettingClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYSettingClearCacheCell.m; sourceTree = "<group>"; };
 		00A531B21EC0D56F00BE8B75 /* FZYMeSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYMeSquareButton.h; sourceTree = "<group>"; };
 		00A531B31EC0D56F00BE8B75 /* FZYMeSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYMeSquareButton.m; sourceTree = "<group>"; };
 		00A7EB3F1EA90AF7003B686F /* FZYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYSettingViewController.h; sourceTree = "<group>"; };
@@ -231,6 +237,8 @@
 				008DFD8D1EBB8CE500B4185C /* FZYMeFooterView.m */,
 				00A531B21EC0D56F00BE8B75 /* FZYMeSquareButton.h */,
 				00A531B31EC0D56F00BE8B75 /* FZYMeSquareButton.m */,
+				009A54541EDB2DAD0087F79F /* FZYSettingClearCacheCell.h */,
+				009A54551EDB2DAD0087F79F /* FZYSettingClearCacheCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +288,8 @@
 				007FA12E1E9D4386001080E1 /* PrefixHeader.pch */,
 				008DFD861EBB7E6D00B4185C /* FZYConst.h */,
 				008DFD871EBB7E6D00B4185C /* FZYConst.m */,
+				009A54511EDB29AC0087F79F /* FZYFileUtils.h */,
+				009A54521EDB29AC0087F79F /* FZYFileUtils.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -513,6 +523,7 @@
 				007FA1391E9D4386001080E1 /* UIView+FZYExtension.m in Sources */,
 				008E933F1EB79F4D00B9C672 /* UITextField+FZYExtension.m in Sources */,
 				006FEACF1EC4CA9B00C8014F /* FZYWebViewController.m in Sources */,
+				009A54561EDB2DAD0087F79F /* FZYSettingClearCacheCell.m in Sources */,
 				008764061EAE5C53001401B4 /* FZYLoginRegisterViewController.m in Sources */,
 				007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */,
 				00F61F541EBF7E480054ECE5 /* FZYMeSquare.m in Sources */,
@@ -527,6 +538,7 @@
 				007FA13C1E9D4386001080E1 /* FZYTabBarController.m in Sources */,
 				0087640C1EAE6DF0001401B4 /* FZYQuickLoginButton.m in Sources */,
 				006B06FA1E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.m in Sources */,
+				009A54531EDB29AC0087F79F /* FZYFileUtils.m in Sources */,
 				007FA13A1E9D4386001080E1 /* main.m in Sources */,
 				008DFD8E1EBB8CE500B4185C /* FZYMeFooterView.m in Sources */,
 				007FA1381E9D4386001080E1 /* AppDelegate.m in Sources */,
