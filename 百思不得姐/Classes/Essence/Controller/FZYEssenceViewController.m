@@ -11,6 +11,7 @@
 @interface FZYEssenceViewController ()
 
 @property (nonatomic, weak) UIButton *titleButtonSelected;
+@property (nonatomic, weak) UIView *indicatorView;
 
 @end
 
@@ -57,6 +58,16 @@
         [titleButton setTitle:titles[i] forState:UIControlStateNormal];
         titleButton.frame = CGRectMake(i * titleButtonW, 0, titleButtonW, titleButtonH);
     }
+    
+    UIView *indicatorView = [[UIView alloc] init];
+    indicatorView.backgroundColor = [UIColor redColor];
+    indicatorView.fzy_height = 1;
+    indicatorView.fzy_y = titlesView.fzy_height - indicatorView.fzy_height;
+    [titlesView addSubview:indicatorView];
+    
+    self.indicatorView = indicatorView;
+    
+    [self selectTitle:titlesView.subviews.firstObject animated:NO];
 }
 
 - (void)setupNav {
@@ -66,9 +77,29 @@
 }
 
 - (void)titleClick:(UIButton *)titleButton {
+    [self selectTitle:titleButton animated:YES];
+}
+
+- (void)selectTitle:(UIButton *)titleButton animated:(BOOL)animated {
     self.titleButtonSelected.enabled = YES;
     titleButton.enabled = NO;
     self.titleButtonSelected = titleButton;
+    
+    CGFloat titleW = titleButton.titleLabel.fzy_width;
+    if (titleW == 0) { // 第一次选中时，titleButton还没有宽度
+        titleW = [titleButton.currentTitle sizeWithAttributes:@{NSFontAttributeName : titleButton.titleLabel.font}].width;
+    }
+    
+    if (animated) {
+        [UIView animateWithDuration:0.25 animations:^{
+            self.indicatorView.fzy_width = titleW;
+            self.indicatorView.fzy_centerX = titleButton.center.x;
+        }];
+    } else {
+        self.indicatorView.fzy_width = titleW;
+        self.indicatorView.fzy_centerX = titleButton.center.x;
+    }
+    
 }
 
 - (void)tagClick {
