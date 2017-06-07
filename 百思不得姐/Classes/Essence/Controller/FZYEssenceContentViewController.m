@@ -27,6 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    
     NSLog(@"type:%zd", self.essenceType);
     FZYFunc
     NSLog(@"---------");

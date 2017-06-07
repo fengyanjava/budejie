@@ -9,10 +9,11 @@
 #import "FZYEssenceViewController.h"
 #import "FZYEssenceContentViewController.h"
 
-@interface FZYEssenceViewController ()
+@interface FZYEssenceViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, weak) UIButton *titleButtonSelected;
 @property (nonatomic, weak) UIView *indicatorView;
+@property (nonatomic, weak) UIView *titlesView;
 @property (nonatomic, weak) UIScrollView *scrollView;
 
 @end
@@ -28,6 +29,10 @@
     [self setupChildVCs];
     [self setupScrollView];
     [self setupTitlesView];
+    
+    
+    [self selectTitle:self.titlesView.subviews.firstObject animated:NO];
+    [self selectChildViewController:0];
 }
 
 - (void)setupChildVCs {
@@ -42,12 +47,13 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    scrollView.backgroundColor = FZYRandomColor;
+//    scrollView.backgroundColor = FZYRandomColor;
     scrollView.frame = self.view.bounds;
     scrollView.pagingEnabled = YES;
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
     scrollView.contentSize = CGSizeMake(self.childViewControllers.count * scrollView.fzy_width, 0);
+    scrollView.delegate = self;
     [self.view addSubview:scrollView];
     
     self.scrollView = scrollView;
@@ -68,9 +74,10 @@
 
 - (void)setupTitlesView {
     UIView *titlesView = [[UIView alloc] init];
-    titlesView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.6];
+    titlesView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
     titlesView.frame = CGRectMake(0, 64, self.view.fzy_width, 35);
     [self.view addSubview:titlesView];
+    self.titlesView = titlesView;
     
     NSArray<NSString *> *titles = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
     NSUInteger count = titles.count;
@@ -80,6 +87,7 @@
     for (NSUInteger i = 0; i < count; i++) {
         UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
         titleButton.titleLabel.font = [UIFont systemFontOfSize:14];
+        titleButton.tag = i;
         
         [titleButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         [titleButton setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
@@ -99,7 +107,6 @@
     
     self.indicatorView = indicatorView;
     
-    [self selectTitle:titlesView.subviews.firstObject animated:NO];
 }
 
 - (void)setupNav {
@@ -111,7 +118,9 @@
 - (void)titleClick:(UIButton *)titleButton {
     [self selectTitle:titleButton animated:YES];
     
-    
+    CGPoint offset = self.scrollView.contentOffset;
+    offset.x = titleButton.tag * self.scrollView.fzy_width;
+    [self.scrollView setContentOffset:offset animated:YES];
 }
 
 - (void)selectTitle:(UIButton *)titleButton animated:(BOOL)animated {
@@ -138,6 +147,43 @@
 
 - (void)tagClick {
     FZYFunc
+}
+
+#pragma mark 选中且添加子控制器View
+- (void)selectChildViewController:(NSUInteger)index {
+//    NSUInteger index = self.scrollView.contentOffset.x / self.scrollView.fzy_width;
+    
+    UIViewController *childVC = self.childViewControllers[index];
+    
+//    if (childVC.view.superview) { // already added
+//        return;
+//    }
+//    if (childVC.view.window) { // already added
+//        return;
+//    }
+    if (childVC.isViewLoaded) { // already added
+        return;
+    }
+    
+//    childVC.view.frame = self.scrollView.bounds;
+    childVC.view.fzy_x = index * self.scrollView.fzy_width;
+    childVC.view.fzy_y = 0;
+    childVC.view.fzy_width = self.scrollView.fzy_width;
+    childVC.view.fzy_height = self.scrollView.fzy_height;
+    [self.scrollView addSubview:childVC.view];
+}
+
+#pragma mark - <UIScrollViewDelegate>
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    NSUInteger index = self.scrollView.contentOffset.x / self.scrollView.fzy_width;
+    [self selectChildViewController:index];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSUInteger index = scrollView.contentOffset.x / scrollView.fzy_width;
+    UIButton *button = self.titlesView.subviews[index];
+    [self selectTitle:button animated:YES];
+    [self selectChildViewController:index];
 }
 
 @end
