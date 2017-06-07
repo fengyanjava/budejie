@@ -7,11 +7,13 @@
 //
 
 #import "FZYEssenceViewController.h"
+#import "FZYEssenceContentViewController.h"
 
 @interface FZYEssenceViewController ()
 
 @property (nonatomic, weak) UIButton *titleButtonSelected;
 @property (nonatomic, weak) UIView *indicatorView;
+@property (nonatomic, weak) UIScrollView *scrollView;
 
 @end
 
@@ -23,15 +25,45 @@
     self.view.backgroundColor = FZYViewControllerBgColor;
     
     [self setupNav];
+    [self setupChildVCs];
     [self setupScrollView];
     [self setupTitlesView];
 }
 
+- (void)setupChildVCs {
+    for (NSUInteger type = 0; type < FZYEssenceType_END; type++) {
+        FZYEssenceContentViewController *vc = [[FZYEssenceContentViewController alloc] initWithType:type];
+        [self addChildViewController:vc];
+    }
+    
+}
+
 - (void)setupScrollView {
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.backgroundColor = FZYRandomColor;
     scrollView.frame = self.view.bounds;
+    scrollView.pagingEnabled = YES;
+    scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.showsVerticalScrollIndicator = NO;
+    scrollView.contentSize = CGSizeMake(self.childViewControllers.count * scrollView.fzy_width, 0);
     [self.view addSubview:scrollView];
+    
+    self.scrollView = scrollView;
+    
+//    NSUInteger count = self.childViewControllers.count;
+//    for (NSInteger i = 0; i < count; i++) {
+//        UITableView *vcView = (UITableView *)self.childViewControllers[i].view;
+//        vcView.backgroundColor = FZYRandomColor;
+//        vcView.fzy_x = i * vcView.fzy_width;
+//        vcView.fzy_y = 0;
+//        vcView.fzy_height = scrollView.fzy_height;
+//        vcView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
+//        vcView.scrollIndicatorInsets = vcView.contentInset;
+//        [scrollView addSubview:vcView];
+//    }
+    
 }
 
 - (void)setupTitlesView {
@@ -78,6 +110,8 @@
 
 - (void)titleClick:(UIButton *)titleButton {
     [self selectTitle:titleButton animated:YES];
+    
+    
 }
 
 - (void)selectTitle:(UIButton *)titleButton animated:(BOOL)animated {

@@ -20,6 +20,7 @@
 		007FA13B1E9D4386001080E1 /* FZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1311E9D4386001080E1 /* FZYTabBar.m */; };
 		007FA13C1E9D4386001080E1 /* FZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA1331E9D4386001080E1 /* FZYTabBarController.m */; };
 		008081CE1EB3AA1700DA82F5 /* FZYAccountTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 008081CD1EB3AA1700DA82F5 /* FZYAccountTextField.m */; };
+		008453111EE7114E00664693 /* FZYEssenceContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008453101EE7114E00664693 /* FZYEssenceContentViewController.m */; };
 		008764021EAE5060001401B4 /* FZYFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008764011EAE5060001401B4 /* FZYFollowViewController.xib */; };
 		008764061EAE5C53001401B4 /* FZYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008764041EAE5C53001401B4 /* FZYLoginRegisterViewController.m */; };
 		008764071EAE5C53001401B4 /* FZYLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008764051EAE5C53001401B4 /* FZYLoginRegisterViewController.xib */; };
@@ -65,6 +66,8 @@
 		007FA1331E9D4386001080E1 /* FZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYTabBarController.m; sourceTree = "<group>"; };
 		008081CC1EB3AA1700DA82F5 /* FZYAccountTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYAccountTextField.h; sourceTree = "<group>"; };
 		008081CD1EB3AA1700DA82F5 /* FZYAccountTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYAccountTextField.m; sourceTree = "<group>"; };
+		0084530F1EE7114E00664693 /* FZYEssenceContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYEssenceContentViewController.h; sourceTree = "<group>"; };
+		008453101EE7114E00664693 /* FZYEssenceContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYEssenceContentViewController.m; sourceTree = "<group>"; };
 		008764011EAE5060001401B4 /* FZYFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZYFollowViewController.xib; sourceTree = "<group>"; };
 		008764031EAE5C53001401B4 /* FZYLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYLoginRegisterViewController.h; sourceTree = "<group>"; };
 		008764041EAE5C53001401B4 /* FZYLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYLoginRegisterViewController.m; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 			children = (
 				007FA1111E9D4386001080E1 /* FZYEssenceViewController.h */,
 				007FA1121E9D4386001080E1 /* FZYEssenceViewController.m */,
+				0084530F1EE7114E00664693 /* FZYEssenceContentViewController.h */,
+				008453101EE7114E00664693 /* FZYEssenceContentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 				006FEACF1EC4CA9B00C8014F /* FZYWebViewController.m in Sources */,
 				009A54561EDB2DAD0087F79F /* FZYSettingClearCacheCell.m in Sources */,
 				008764061EAE5C53001401B4 /* FZYLoginRegisterViewController.m in Sources */,
+				008453111EE7114E00664693 /* FZYEssenceContentViewController.m in Sources */,
 				007FA1361E9D4386001080E1 /* FZYMeViewController.m in Sources */,
 				00F61F541EBF7E480054ECE5 /* FZYMeSquare.m in Sources */,
 				008DFD881EBB7E6D00B4185C /* FZYConst.m in Sources */,
