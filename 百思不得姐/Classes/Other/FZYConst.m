@@ -9,3 +9,4 @@
 #import <UIKit/UIKit.h>
 
 CGFloat const FZY_Margin = 10;
+NSString * const BDJ_API_URL = @"http://api.budejie.com/api/api_open.php";

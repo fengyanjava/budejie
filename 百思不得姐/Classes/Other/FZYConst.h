@@ -9,3 +9,5 @@
 #import <UIKit/UIKit.h>
 
 UIKIT_EXTERN CGFloat const FZY_Margin;
+
+UIKIT_EXTERN NSString * const BDJ_API_URL;

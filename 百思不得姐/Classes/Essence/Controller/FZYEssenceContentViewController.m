@@ -7,10 +7,16 @@
 //
 
 #import "FZYEssenceContentViewController.h"
+#import <AFNetworking.h>
+#import "FZYSubject.h"
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
 
 @interface FZYEssenceContentViewController ()
 
 @property (nonatomic, assign) FZYEssenceType essenceType;
+
+@property (nonatomic, strong) NSMutableArray<FZYSubject *> *subjects;
 
 @end
 
@@ -33,6 +39,41 @@
     NSLog(@"type:%zd", self.essenceType);
     FZYFunc
     NSLog(@"---------");
+    
+    self.subjects = [NSMutableArray array];
+    
+    [self setupRefresh];
+}
+
+- (void)setupRefresh {
+    UIView *headerView = [[UIView alloc] init];
+    headerView.backgroundColor = [UIColor yellowColor];
+    headerView.fzy_width = self.tableView.fzy_width;
+    headerView.fzy_height = 50;
+    headerView.fzy_y = -headerView.fzy_height;
+    [self.tableView addSubview:headerView];
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"下拉刷新";
+    [label sizeToFit];
+    label.center = CGPointMake(headerView.fzy_width / 2, headerView.fzy_height / 2);
+    [headerView addSubview:label];
+    
+}
+
+#pragma mark - load data
+- (void)loadNewSubjects {
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"data";
+    
+    [[AFHTTPSessionManager manager] GET:BDJ_API_URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray<FZYSubject *> *subjects = [FZYSubject mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [self.subjects addObjectsFromArray:subjects];
+        [self.tableView reloadData];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"failure:%@", error);
+    }];
 }
 
 #pragma mark - Table view data source
@@ -42,17 +83,21 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 50;
+    return self.subjects.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *ID = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"type:%zd row:%zd", self.essenceType, indexPath.row];
+    FZYSubject *subject = self.subjects[indexPath.row];
+    
+    cell.textLabel.text = subject.name;
+    cell.detailTextLabel.text = subject.text;
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:subject.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     
     return cell;
 }

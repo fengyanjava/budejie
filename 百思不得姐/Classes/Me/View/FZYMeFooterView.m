@@ -36,7 +36,7 @@
     params[@"a"] =  @"square";
     params[@"c"] =  @"topic";
     
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [[AFHTTPSessionManager manager] GET:BDJ_API_URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 //            NSLog(@"success %@ %@", [responseObject class], responseObject);
         NSArray *squares = [FZYMeSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
         [self createSquares:squares];
