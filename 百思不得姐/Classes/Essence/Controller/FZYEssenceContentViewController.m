@@ -11,6 +11,7 @@
 #import "FZYSubject.h"
 #import <MJExtension.h>
 #import <UIImageView+WebCache.h>
+#import <MJRefresh.h>
 
 @interface FZYEssenceContentViewController ()
 
@@ -43,22 +44,18 @@
     self.subjects = [NSMutableArray array];
     
     [self setupRefresh];
+    
+//    [self loadNewSubjects];
 }
 
 - (void)setupRefresh {
-    UIView *headerView = [[UIView alloc] init];
-    headerView.backgroundColor = [UIColor yellowColor];
-    headerView.fzy_width = self.tableView.fzy_width;
-    headerView.fzy_height = 50;
-    headerView.fzy_y = -headerView.fzy_height;
-    [self.tableView addSubview:headerView];
+//    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//        [self loadNewSubjects];
+//    }];
     
-    UILabel *label = [[UILabel alloc] init];
-    label.text = @"下拉刷新";
-    [label sizeToFit];
-    label.center = CGPointMake(headerView.fzy_width / 2, headerView.fzy_height / 2);
-    [headerView addSubview:label];
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewSubjects)];
     
+    [self.tableView.mj_header beginRefreshing];
 }
 
 #pragma mark - load data
@@ -68,11 +65,13 @@
     params[@"c"] = @"data";
     
     [[AFHTTPSessionManager manager] GET:BDJ_API_URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [self.tableView.mj_header endRefreshing];
         NSArray<FZYSubject *> *subjects = [FZYSubject mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         [self.subjects addObjectsFromArray:subjects];
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"failure:%@", error);
+        [self.tableView.mj_header endRefreshing];
     }];
 }
 
@@ -101,5 +100,6 @@
     
     return cell;
 }
+
 
 @end
