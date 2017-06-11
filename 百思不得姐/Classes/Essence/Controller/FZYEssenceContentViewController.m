@@ -12,6 +12,7 @@
 #import <MJExtension.h>
 #import <UIImageView+WebCache.h>
 #import <MJRefresh.h>
+#import "FZYRefreshHeader.h"
 
 @interface FZYEssenceContentViewController ()
 
@@ -53,7 +54,7 @@
 //        [self loadNewSubjects];
 //    }];
     
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewSubjects)];
+    self.tableView.mj_header = [FZYRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewSubjects)];
     
     [self.tableView.mj_header beginRefreshing];
 }
