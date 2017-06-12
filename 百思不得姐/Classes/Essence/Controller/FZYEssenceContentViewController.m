@@ -18,6 +18,7 @@
 
 @property (nonatomic, assign) FZYEssenceType essenceType;
 
+@property (nonatomic, strong) NSString *maxtime;
 @property (nonatomic, strong) NSMutableArray<FZYSubject *> *subjects;
 
 @end
@@ -57,18 +58,41 @@
     self.tableView.mj_header = [FZYRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewSubjects)];
     
     [self.tableView.mj_header beginRefreshing];
+    
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
+}
+
+- (void)loadMore {
+    [self getSubjectList:YES];
 }
 
 #pragma mark - load data
 - (void)loadNewSubjects {
+    [self getSubjectList:NO];
+}
+
+- (void)getSubjectList:(BOOL)isLoadMore {
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
+    if (isLoadMore) {
+        params[@"maxtime"] = self.maxtime;
+    }
     
     [[AFHTTPSessionManager manager] GET:BDJ_API_URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
         [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
+        
+        self.maxtime = responseObject[@"info"][@"maxtime"];
+        
+        if (!isLoadMore) {
+            [self.subjects removeAllObjects];
+        }
+        
         NSArray<FZYSubject *> *subjects = [FZYSubject mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         [self.subjects addObjectsFromArray:subjects];
+        
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"failure:%@", error);
