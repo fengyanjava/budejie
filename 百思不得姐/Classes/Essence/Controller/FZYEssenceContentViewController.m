@@ -13,6 +13,7 @@
 #import <UIImageView+WebCache.h>
 #import <MJRefresh.h>
 #import "FZYRefreshHeader.h"
+#import "FZYRefreshFooter.h"
 
 @interface FZYEssenceContentViewController ()
 
@@ -59,7 +60,7 @@
     
     [self.tableView.mj_header beginRefreshing];
     
-    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
+    self.tableView.mj_footer = [FZYRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
 }
 
 - (void)loadMore {

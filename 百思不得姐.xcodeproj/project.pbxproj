@@ -25,6 +25,7 @@
 		008764061EAE5C53001401B4 /* FZYLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008764041EAE5C53001401B4 /* FZYLoginRegisterViewController.m */; };
 		008764071EAE5C53001401B4 /* FZYLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008764051EAE5C53001401B4 /* FZYLoginRegisterViewController.xib */; };
 		0087640C1EAE6DF0001401B4 /* FZYQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0087640B1EAE6DF0001401B4 /* FZYQuickLoginButton.m */; };
+		008DA62B1EEEF30900DD1CC6 /* FZYRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DA62A1EEEF30900DD1CC6 /* FZYRefreshFooter.m */; };
 		008DFD881EBB7E6D00B4185C /* FZYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DFD871EBB7E6D00B4185C /* FZYConst.m */; };
 		008DFD8B1EBB807500B4185C /* FZYMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DFD8A1EBB807500B4185C /* FZYMeCell.m */; };
 		008DFD8E1EBB8CE500B4185C /* FZYMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 008DFD8D1EBB8CE500B4185C /* FZYMeFooterView.m */; };
@@ -76,6 +77,8 @@
 		008764051EAE5C53001401B4 /* FZYLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZYLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		0087640A1EAE6DF0001401B4 /* FZYQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYQuickLoginButton.h; sourceTree = "<group>"; };
 		0087640B1EAE6DF0001401B4 /* FZYQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYQuickLoginButton.m; sourceTree = "<group>"; };
+		008DA6291EEEF30900DD1CC6 /* FZYRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYRefreshFooter.h; sourceTree = "<group>"; };
+		008DA62A1EEEF30900DD1CC6 /* FZYRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYRefreshFooter.m; sourceTree = "<group>"; };
 		008DFD861EBB7E6D00B4185C /* FZYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYConst.h; sourceTree = "<group>"; };
 		008DFD871EBB7E6D00B4185C /* FZYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYConst.m; sourceTree = "<group>"; };
 		008DFD891EBB807500B4185C /* FZYMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYMeCell.h; sourceTree = "<group>"; };
@@ -340,6 +343,8 @@
 				008081CD1EB3AA1700DA82F5 /* FZYAccountTextField.m */,
 				0090F4871EEDA290007E4677 /* FZYRefreshHeader.h */,
 				0090F4881EEDA290007E4677 /* FZYRefreshHeader.m */,
+				008DA6291EEEF30900DD1CC6 /* FZYRefreshFooter.h */,
+				008DA62A1EEEF30900DD1CC6 /* FZYRefreshFooter.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -557,6 +562,7 @@
 				0087640C1EAE6DF0001401B4 /* FZYQuickLoginButton.m in Sources */,
 				006B06FA1E9FEBC300A98821 /* UIBarButtonItem+FZYExtension.m in Sources */,
 				009A54531EDB29AC0087F79F /* FZYFileUtils.m in Sources */,
+				008DA62B1EEEF30900DD1CC6 /* FZYRefreshFooter.m in Sources */,
 				007FA13A1E9D4386001080E1 /* main.m in Sources */,
 				008DFD8E1EBB8CE500B4185C /* FZYMeFooterView.m in Sources */,
 				007FA1381E9D4386001080E1 /* AppDelegate.m in Sources */,
