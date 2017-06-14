@@ -14,6 +14,7 @@
 #import <UIButton+WebCache.h>
 #import "FZYMeSquareButton.h"
 #import "FZYWebViewController.h"
+#import "FZYHTTPSessionManager.h"
 
 @interface FZYMeFooterView ()
 
@@ -36,7 +37,7 @@
     params[@"a"] =  @"square";
     params[@"c"] =  @"topic";
     
-    [[AFHTTPSessionManager manager] GET:BDJ_API_URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [[FZYHTTPSessionManager manager] GET:BDJ_API_URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 //            NSLog(@"success %@ %@", [responseObject class], responseObject);
         NSArray *squares = [FZYMeSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
         [self createSquares:squares];

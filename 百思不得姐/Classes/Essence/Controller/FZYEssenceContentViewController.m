@@ -14,6 +14,7 @@
 #import <MJRefresh.h>
 #import "FZYRefreshHeader.h"
 #import "FZYRefreshFooter.h"
+#import "FZYHTTPSessionManager.h"
 
 @interface FZYEssenceContentViewController ()
 
@@ -80,7 +81,7 @@
         params[@"maxtime"] = self.maxtime;
     }
     
-    [[AFHTTPSessionManager manager] GET:BDJ_API_URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [[FZYHTTPSessionManager manager] GET:BDJ_API_URL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         [self.tableView.mj_header endRefreshing];
         [self.tableView.mj_footer endRefreshing];
