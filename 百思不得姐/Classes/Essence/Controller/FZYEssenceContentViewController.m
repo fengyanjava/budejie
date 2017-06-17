@@ -15,6 +15,9 @@
 #import "FZYRefreshHeader.h"
 #import "FZYRefreshFooter.h"
 #import "FZYHTTPSessionManager.h"
+#import "FZYSubjectCell.h"
+
+static NSString *const SubjectCellId = @"subject";
 
 @interface FZYEssenceContentViewController ()
 
@@ -38,8 +41,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = FZYViewControllerBgColor;
+    
+    self.tableView.rowHeight = 500;
     self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([FZYSubjectCell class]) bundle:nil] forCellReuseIdentifier:SubjectCellId];
     
     NSLog(@"type:%zd", self.essenceType);
     FZYFunc
@@ -113,17 +120,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
-    
+
     FZYSubject *subject = self.subjects[indexPath.row];
     
-    cell.textLabel.text = subject.name;
-    cell.detailTextLabel.text = subject.text;
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:subject.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    FZYSubjectCell *cell = [tableView dequeueReusableCellWithIdentifier:SubjectCellId];
+    cell.subject = subject;
     
     return cell;
 }

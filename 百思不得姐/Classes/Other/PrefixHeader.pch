@@ -17,7 +17,7 @@
 // color
 #define FZYColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define FZYRandomColor FZYColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
-#define FZYViewControllerBgColor FZYColor(189, 195, 199)
+#define FZYViewControllerBgColor FZYColor(220, 220, 220)
 
 // log func
 #define FZYFunc FZYLog(@"%s", __func__);

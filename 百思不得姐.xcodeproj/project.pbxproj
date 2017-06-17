@@ -33,6 +33,8 @@
 		008E08A31EA6787500F0B4DF /* FZYTalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E08A21EA6787500F0B4DF /* FZYTalentViewController.m */; };
 		008E933F1EB79F4D00B9C672 /* UITextField+FZYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E933E1EB79F4D00B9C672 /* UITextField+FZYExtension.m */; };
 		0090F4891EEDA290007E4677 /* FZYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0090F4881EEDA290007E4677 /* FZYRefreshHeader.m */; };
+		009609D51EF58A91009E092B /* FZYSubjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009609D41EF58A91009E092B /* FZYSubjectCell.xib */; };
+		009609D81EF59E3C009E092B /* FZYSubjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 009609D71EF59E3C009E092B /* FZYSubjectCell.m */; };
 		009A54531EDB29AC0087F79F /* FZYFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A54521EDB29AC0087F79F /* FZYFileUtils.m */; };
 		009A54561EDB2DAD0087F79F /* FZYSettingClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A54551EDB2DAD0087F79F /* FZYSettingClearCacheCell.m */; };
 		00A2E57D1EE9AFF300913DD0 /* FZYSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2E57C1EE9AFF300913DD0 /* FZYSubject.m */; };
@@ -94,6 +96,9 @@
 		008E933E1EB79F4D00B9C672 /* UITextField+FZYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+FZYExtension.m"; sourceTree = "<group>"; };
 		0090F4871EEDA290007E4677 /* FZYRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYRefreshHeader.h; sourceTree = "<group>"; };
 		0090F4881EEDA290007E4677 /* FZYRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYRefreshHeader.m; sourceTree = "<group>"; };
+		009609D41EF58A91009E092B /* FZYSubjectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FZYSubjectCell.xib; sourceTree = "<group>"; };
+		009609D61EF59E3C009E092B /* FZYSubjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYSubjectCell.h; sourceTree = "<group>"; };
+		009609D71EF59E3C009E092B /* FZYSubjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYSubjectCell.m; sourceTree = "<group>"; };
 		009A54511EDB29AC0087F79F /* FZYFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYFileUtils.h; sourceTree = "<group>"; };
 		009A54521EDB29AC0087F79F /* FZYFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZYFileUtils.m; sourceTree = "<group>"; };
 		009A54541EDB2DAD0087F79F /* FZYSettingClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZYSettingClearCacheCell.h; sourceTree = "<group>"; };
@@ -174,6 +179,9 @@
 		007FA1141E9D4386001080E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				009609D41EF58A91009E092B /* FZYSubjectCell.xib */,
+				009609D61EF59E3C009E092B /* FZYSubjectCell.h */,
+				009609D71EF59E3C009E092B /* FZYSubjectCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -485,6 +493,7 @@
 				00E42F901E7E3A52003C6F84 /* Assets.xcassets in Resources */,
 				008764021EAE5060001401B4 /* FZYFollowViewController.xib in Resources */,
 				006FEAD01EC4CA9B00C8014F /* FZYWebViewController.xib in Resources */,
+				009609D51EF58A91009E092B /* FZYSubjectCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +570,7 @@
 				0090F4891EEDA290007E4677 /* FZYRefreshHeader.m in Sources */,
 				00A531B41EC0D56F00BE8B75 /* FZYMeSquareButton.m in Sources */,
 				007FA1341E9D4386001080E1 /* FZYEssenceViewController.m in Sources */,
+				009609D81EF59E3C009E092B /* FZYSubjectCell.m in Sources */,
 				007FA13B1E9D4386001080E1 /* FZYTabBar.m in Sources */,
 				007FA1351E9D4386001080E1 /* FZYFollowViewController.m in Sources */,
 				007FA1371E9D4386001080E1 /* FZYNewViewController.m in Sources */,
