@@ -43,10 +43,7 @@ static NSString *const SubjectCellId = @"subject";
     
     self.view.backgroundColor = FZYViewControllerBgColor;
     
-    self.tableView.rowHeight = 500;
-    self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
-    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([FZYSubjectCell class]) bundle:nil] forCellReuseIdentifier:SubjectCellId];
+    [self setupTableView];
     
     NSLog(@"type:%zd", self.essenceType);
     FZYFunc
@@ -56,7 +53,14 @@ static NSString *const SubjectCellId = @"subject";
     
     [self setupRefresh];
     
-//    [self loadNewSubjects];
+}
+
+- (void)setupTableView {
+    self.tableView.rowHeight = 500;
+    self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([FZYSubjectCell class]) bundle:nil] forCellReuseIdentifier:SubjectCellId];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)setupRefresh {

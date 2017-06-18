@@ -43,4 +43,10 @@
     self.contentTextLabel.text = subject.text;
 }
 
+- (void)setFrame:(CGRect)frame {
+    frame.size.height -= 10;
+    frame.origin.y += 10;
+    [super setFrame:frame];
+}
+
 @end

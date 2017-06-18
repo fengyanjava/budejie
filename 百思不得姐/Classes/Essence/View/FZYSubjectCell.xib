@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subject" rowHeight="487" id="3WS-ri-lZw" customClass="FZYSubjectCell">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="subject" rowHeight="487" id="3WS-ri-lZw" customClass="FZYSubjectCell">
             <rect key="frame" x="0.0" y="0.0" width="588" height="487"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3WS-ri-lZw" id="IdL-9J-4at">
@@ -19,28 +19,28 @@
                         <rect key="frame" x="8" y="8" width="572" height="470.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0dW-qW-xlN" userLabel="头像">
-                                <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                <rect key="frame" x="10" y="10" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="LEb-Mo-WKT"/>
-                                    <constraint firstAttribute="height" constant="80" id="VSw-ZE-nqA"/>
+                                    <constraint firstAttribute="width" constant="50" id="LEb-Mo-WKT"/>
+                                    <constraint firstAttribute="height" constant="50" id="VSw-ZE-nqA"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af3-3t-XxQ" userLabel="昵称">
-                                <rect key="frame" x="100" y="10" width="42" height="21"/>
+                                <rect key="frame" x="70" y="10" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFK-Th-tHl" userLabel="时间">
-                                <rect key="frame" x="100" y="69" width="42" height="21"/>
+                                <rect key="frame" x="70" y="39" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEw-jN-4e8" userLabel="文本">
-                                <rect key="frame" x="10" y="110" width="552" height="21"/>
+                                <rect key="frame" x="10" y="80" width="552" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VR-nR-l1K" userLabel="工具栏">
@@ -149,13 +149,13 @@
                                         <string key="text">这是什么东东啊
 好有意思哦。。。。</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWE-XE-4zw" userLabel="评论标题">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -170,7 +170,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="af3-3t-XxQ" firstAttribute="leading" secondItem="0dW-qW-xlN" secondAttribute="trailing" constant="10" id="0ub-ML-n7h"/>
                             <constraint firstAttribute="trailing" secondItem="oEw-jN-4e8" secondAttribute="trailing" constant="10" id="1jS-KY-nnM"/>
@@ -190,6 +189,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="os9-LZ-iNn" firstAttribute="top" secondItem="IdL-9J-4at" secondAttribute="topMargin" id="I9B-yw-3v0"/>
                     <constraint firstItem="os9-LZ-iNn" firstAttribute="leading" secondItem="IdL-9J-4at" secondAttribute="leadingMargin" id="LMm-E4-erh"/>
