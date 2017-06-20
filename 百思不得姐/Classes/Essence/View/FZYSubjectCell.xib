@@ -37,6 +37,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-at-mWB" userLabel="更多">
+                                <rect key="frame" x="538" y="10" width="24" height="22"/>
+                                <state key="normal" image="cellmorebtnnormal"/>
+                                <state key="highlighted" image="cellmorebtnclick"/>
+                                <connections>
+                                    <action selector="moreBtnClick:" destination="3WS-ri-lZw" eventType="touchUpInside" id="FG6-If-szu"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEw-jN-4e8" userLabel="文本">
                                 <rect key="frame" x="10" y="80" width="552" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -44,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VR-nR-l1K" userLabel="工具栏">
-                                <rect key="frame" x="0.0" y="410.5" width="572" height="60"/>
+                                <rect key="frame" x="0.0" y="410" width="572" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-aJ-M75" userLabel="like">
                                         <rect key="frame" x="0.0" y="0.0" width="142.5" height="60"/>
@@ -142,7 +150,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvR-Fk-fPg" userLabel="最新评论">
-                                <rect key="frame" x="10" y="338.5" width="552" height="62"/>
+                                <rect key="frame" x="10" y="338" width="552" height="62"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-F7-q5Z" userLabel="评论内容">
                                         <rect key="frame" x="0.0" y="21" width="552" height="41"/>
@@ -177,7 +185,9 @@
                             <constraint firstItem="1VR-nR-l1K" firstAttribute="leading" secondItem="os9-LZ-iNn" secondAttribute="leading" id="3do-y3-2MO"/>
                             <constraint firstItem="oEw-jN-4e8" firstAttribute="leading" secondItem="0dW-qW-xlN" secondAttribute="leading" id="4LH-uh-adz"/>
                             <constraint firstItem="0dW-qW-xlN" firstAttribute="top" secondItem="os9-LZ-iNn" secondAttribute="top" constant="10" id="5xv-es-GYe"/>
+                            <constraint firstItem="EIh-at-mWB" firstAttribute="top" secondItem="os9-LZ-iNn" secondAttribute="top" constant="10" id="DD8-ya-Z5X"/>
                             <constraint firstItem="1VR-nR-l1K" firstAttribute="top" secondItem="lvR-Fk-fPg" secondAttribute="bottom" constant="10" id="Fdz-Z8-Lbb"/>
+                            <constraint firstAttribute="trailing" secondItem="EIh-at-mWB" secondAttribute="trailing" constant="10" id="KiN-Q9-8l2"/>
                             <constraint firstItem="oEw-jN-4e8" firstAttribute="top" secondItem="dFK-Th-tHl" secondAttribute="bottom" constant="20" id="MjB-oi-gzv"/>
                             <constraint firstItem="0dW-qW-xlN" firstAttribute="leading" secondItem="os9-LZ-iNn" secondAttribute="leading" constant="10" id="Sy8-FE-CTX"/>
                             <constraint firstAttribute="bottom" secondItem="1VR-nR-l1K" secondAttribute="bottom" id="VvZ-rG-CyM"/>
@@ -213,6 +223,8 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="cellmorebtnclick" width="24" height="20"/>
+        <image name="cellmorebtnnormal" width="24" height="20"/>
         <image name="mainCellDing" width="20" height="20"/>
     </resources>
 </document>

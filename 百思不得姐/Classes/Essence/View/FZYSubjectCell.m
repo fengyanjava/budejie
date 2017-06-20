@@ -41,6 +41,39 @@
     self.nickNameLabel.text = subject.name;
     self.createAtLabel.text = subject.created_at;
     self.contentTextLabel.text = subject.text;
+    
+    NSString *likeText = [self formatNumber:subject.love defaultStr:@"赞"];
+    [self.likeButton setTitle:likeText forState:UIControlStateNormal];
+    
+    NSString *hateText = [self formatNumber:subject.hate defaultStr:@"踩"];
+    [self.hateButton setTitle:hateText forState:UIControlStateNormal];
+    
+    NSString *shareText = [self formatNumber:subject.repost defaultStr:@"分享"];
+    [self.shareButton setTitle:shareText forState:UIControlStateNormal];
+    
+    NSString *commentText = [self formatNumber:subject.comment defaultStr:@"评论"];
+    [self.commentButton setTitle:commentText forState:UIControlStateNormal];
+}
+
+- (NSString *)formatNumber:(NSInteger)number defaultStr:(NSString *)defaultStr {
+    if (number == 0) {
+        return defaultStr;
+    }
+    if (number > 999) {
+        return [NSString stringWithFormat:@"%.1f千", 1.0 * number / 1000];
+    } else {
+        return [NSString stringWithFormat:@"%zd", number];
+    }
+}
+
+- (IBAction)moreBtnClick:(id)sender {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    [alert addAction:[UIAlertAction actionWithTitle:@"收藏" style:UIAlertActionStyleDefault handler:nil]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"举报" style:UIAlertActionStyleDestructive handler:nil]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+    
+    
+    [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)setFrame:(CGRect)frame {
