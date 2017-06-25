@@ -38,6 +38,8 @@
 // const
 #import "FZYConst.h"
 
+#define iOS(version) ([UIDevice currentDevice].systemVersion.doubleValue >= version)
+
 #endif /* ifdef __OBJC__ */
 
 #endif /* PrefixHeader_pch */
